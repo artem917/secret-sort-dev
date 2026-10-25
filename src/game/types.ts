@@ -11,10 +11,12 @@ export type ProofAction = Move | Reveal;
 export type GameAction = ProofAction | { type: 'undo' } | { type: 'hint' };
 export type HistoryEntry =
   | { type: 'reveal'; column: number; id: number }
-  | { type: 'move'; from: Location; to: Location; ids: number[] };
+  | { type: 'move'; from: Location; to: Location; ids: number[]; autoRevealedId: number | null };
+export type GeneratorAlgorithm = 'reverse-packets-v3' | 'ordered-donor-v1';
 export interface FinalResult { score: number; transfers: number; undos: number; hints: number }
 export interface GameState extends Position {
-  version: 1;
+  version: 2;
+  generator: GeneratorAlgorithm;
   runId: string;
   seed: string;
   config: GameConfig;
@@ -24,9 +26,9 @@ export interface GameState extends Position {
   history: HistoryEntry[];
   result: FinalResult | null;
 }
-export interface Level { seed: string; columns: Tile[][]; solution: ProofAction[]; algorithm: 'ordered-donor-v1' }
+export interface Level { seed: string; columns: Tile[][]; solution: ProofAction[]; algorithm: GeneratorAlgorithm }
 export interface Selection { source: Location; count: number }
 export type ActionResult = { ok: true; state: GameState } | { ok: false; state: GameState; reason: string };
 export interface Settings { sound: boolean; animations: boolean; reserveCapacity: 0 | 4; tutorialSeen: boolean }
-export interface RecordEntry extends FinalResult { seed: string; runId: string; date: string }
+export interface RecordEntry extends FinalResult { seed: string; runId: string; date: string; generator?: GeneratorAlgorithm }
 export interface Records { wins: number; bestScore: RecordEntry | null; fewestMoves: RecordEntry | null; completedRuns: string[] }

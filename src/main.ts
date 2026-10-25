@@ -4,6 +4,8 @@ import { loadGame, loadRecords, loadSettings, recordVictory, saveGame, saveRecor
 import { generateLevel, normalizeSeed } from './generator/level-generator.ts';
 import { verifyLevel } from './generator/verify.ts';
 import { mountUI } from './ui/app.ts';
+import { createGroupTutorial } from './ui/tutorial.ts';
+import { visiblePosition } from './game/visible.ts';
 import type { UIEvent, ViewModel } from './ui/app.ts';
 import type { GameAction, GameState, Location, ProofAction } from './game/types.ts';
 
@@ -15,7 +17,7 @@ const params = new URLSearchParams(location.search);
 const model: ViewModel = {
   screen: 'menu', game: loaded.game, settings: loadSettings(storage, matchMedia('(prefers-reduced-motion: reduce)').matches), records: loadRecords(storage),
   selection: null, hint: null, message: 'Раскрой верхний «?». Он только откроется — перенос выбираешь ты.', error: false,
-  warning: loaded.warning, modal: null, seedInput: normalizeSeed(params.get('seed') ?? 'onboarding'),
+  warning: loaded.warning, modal: null, seedInput: normalizeSeed(params.get('seed') ?? newSeed()),
   tutorialStep: 0, tutorialCount: 0, tutorialKind: 0, victoryDismissed: false, blocked: false, effect: null,
 };
 let audio: AudioContext | null = null;
@@ -61,8 +63,11 @@ function act(action: GameAction): void {
   const result = applyAction(old, action);
   if (!result.ok) { message(result.reason, true); render(); return; }
   model.game = result.state; model.selection = null; model.hint = null;
-  if (action.type === 'move' || action.type === 'reveal') { model.effect = { type: action.type, ids }; sound(action.type); }
-  message(action.type === 'reveal' ? 'Секрет открыт. Теперь можно выбрать одну фишку или часть верхней пачки.' : action.type === 'undo' ? 'Последнее действие отменено. Раскрытость восстановлена, стоимость действий сохраняется.' : 'Перенос выполнен. Следующую закрытую фишку раскрывай отдельным нажатием.');
+  if (action.type === 'move' || action.type === 'reveal') {
+    const entry = model.game.history.at(-1);
+    model.effect = { type: action.type, ids, autoRevealId: entry?.type === 'move' ? entry.autoRevealedId : null }; sound(action.type);
+  }
+  message(action.type === 'reveal' ? 'Секрет открыт. Теперь можно выбрать одну фишку или часть верхней пачки.' : action.type === 'undo' ? 'Перенос и его автоматическое раскрытие отменены вместе. Стоимость действий сохраняется.' : 'Перенос выполнен. Новая верхняя закрытая фишка источника открывается автоматически.');
   if (model.game.result) { model.records = recordVictory(model.records, model.game, new Date().toISOString()); model.modal = null; model.victoryDismissed = false; message('Все 108 фишек на своих местах!'); sound('won'); }
   else if (possibleAction(model.game) === null && model.game.history.length) message('Прямых ходов нет. Можно отменить последнее действие или начать тот же seed заново.');
   persist(); render();
@@ -95,7 +100,7 @@ function describeHint(hint: ProofAction): string {
 }
 function finishTutorial(startPlaying: boolean): void {
   model.settings.tutorialSeen = true; model.modal = null; tutorialGame = null; persist();
-  if (startPlaying && model.screen === 'menu') { if (model.game && !model.game.result) { model.screen = 'game'; render(); } else begin('onboarding'); }
+  if (startPlaying && model.screen === 'menu') { if (model.game && !model.game.result) { model.screen = 'game'; render(); } else begin(newSeed()); }
   else render();
 }
 
@@ -108,7 +113,7 @@ function handle(event: UIEvent): void {
     persist(); render(); return;
   }
   switch (event.command) {
-    case 'play': begin(model.seedInput); return;
+    case 'play': begin(params.get('seed') ?? newSeed()); return;
     case 'continue': if (model.game && !model.game.result) { model.screen = 'game'; model.modal = null; message('Партия восстановлена. Можно продолжать.'); render(); } return;
     case 'new': model.seedInput = newSeed(); model.modal = 'new'; render(); return;
     case 'random-seed': model.seedInput = newSeed(); render(); return;
@@ -134,18 +139,17 @@ function handle(event: UIEvent): void {
       if (!tutorialGame || model.tutorialStep !== 0) return;
       const result = applyAction(tutorialGame, { type: 'reveal', column: 0, index: 0 });
       if (!result.ok) return;
-      const level = generateLevel('certified-2'); tutorialGame = createGame(level);
-      for (const action of level.solution.slice(0, 201)) { const next = applyAction(tutorialGame, action); if (!next.ok) throw new Error('Tutorial certificate failed'); tutorialGame = next.state; }
-      model.tutorialKind = tutorialGame.columns[8]![0]!.kind; model.tutorialStep = 1; sound('reveal'); render(); return;
+      tutorialGame = createGroupTutorial();
+      model.tutorialKind = 0; model.tutorialStep = 1; sound('reveal'); render(); return;
     }
     case 'tutorial-select': {
       const count = Number(event.value);
-      if (!tutorialGame || model.tutorialStep < 1 || model.tutorialStep > 2 || selectionError(tutorialGame, { source: columnAt(8), count })) return;
+      if (!tutorialGame || model.tutorialStep < 1 || model.tutorialStep > 2 || selectionError(tutorialGame, { source: columnAt(0), count })) return;
       model.tutorialCount = count; model.tutorialStep = count === 5 ? 2 : 1; render(); return;
     }
     case 'tutorial-transfer': {
       if (!tutorialGame || model.tutorialStep !== 2) return;
-      const next = applyAction(tutorialGame, { type: 'move', from: columnAt(8), to: columnAt(7), count: 5 });
+      const next = applyAction(tutorialGame, { type: 'move', from: columnAt(0), to: columnAt(9), count: 5 });
       if (!next.ok) throw new Error('Tutorial move failed'); tutorialGame = next.state; model.tutorialStep = 3; sound('move'); render(); return;
     }
     case 'tutorial-finish': finishTutorial(model.tutorialStep === 3); return;
@@ -157,7 +161,7 @@ const ui = mountUI(root, handle);
 const visibility = (): void => { if (document.hidden && model.screen === 'game' && !model.modal && model.game && !model.game.result) { model.modal = 'pause'; persist(); render(); } };
 document.addEventListener('visibilitychange', visibility);
 // Opt-in, read-only diagnostics. Browser acceptance tests still use real clicks/taps.
-declare global { interface Window { __secretSort?: { snapshot: () => unknown; certificate: () => ProofAction[] } } }
-if (params.get('qa') === '1') window.__secretSort = Object.freeze({ snapshot: () => structuredClone({ game: model.game, selection: model.selection, screen: model.screen, modal: model.modal, records: model.records, settings: model.settings }), certificate: () => structuredClone(generateLevel(model.game?.seed ?? model.seedInput).solution) });
+declare global { interface Window { __secretSort?: { snapshot: () => unknown; certificate: () => ProofAction[]; visible: () => ReturnType<typeof visiblePosition> | null } } }
+if (params.get('qa') === '1') window.__secretSort = Object.freeze({ snapshot: () => structuredClone({ game: model.game, selection: model.selection, screen: model.screen, modal: model.modal, records: model.records, settings: model.settings }), certificate: () => structuredClone(generateLevel(model.game?.seed ?? model.seedInput).solution), visible: () => model.game ? visiblePosition(model.game) : null });
 render();
 if (import.meta.hot) import.meta.hot.dispose(() => { ui.destroy(); document.removeEventListener('visibilitychange', visibility); void audio?.close(); delete window.__secretSort; });

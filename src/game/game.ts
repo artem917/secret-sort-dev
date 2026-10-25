@@ -39,7 +39,7 @@ export function createGame(level: Level, reserveCapacity: 0 | 4 = 4, runId = `${
   const position: Position = { columns: level.columns.map(col => col.map(tile => ({ ...tile }))), reserve: Array<Tile | null>(reserveCapacity).fill(null) };
   const error = positionError(position, config);
   if (error || position.columns.some((col, i) => col.length !== INITIAL_HEIGHTS[i]) || position.columns.flat().some(tile => tile.open)) throw new Error(error ?? 'Некорректная стартовая раскладка');
-  return { ...position, version: 1, runId, seed: level.seed, config, transfers: 0, undos: 0, hints: 0, history: [], result: null };
+  return { ...position, version: 2, generator: level.algorithm, runId, seed: level.seed, config, transfers: 0, undos: 0, hints: 0, history: [], result: null };
 }
 
 export function validLocation(position: Position, location: Location): boolean {
@@ -139,6 +139,11 @@ export function reverseHistory(position: Position, entry: HistoryEntry): string 
   if (!validLocation(position, entry.from) || !validLocation(position, entry.to) || sameLocation(entry.from, entry.to) || !Array.isArray(entry.ids) || !entry.ids.length || entry.ids.length > 12) return 'Повреждена история переносов';
   const targetTiles = tilesAt(position, entry.to).slice(0, entry.ids.length);
   if (targetTiles.length !== entry.ids.length || targetTiles.some((tile, i) => tile.id !== entry.ids[i] || !tile.open) || (entry.from.zone === 'reserve' && (entry.ids.length !== 1 || position.reserve[entry.from.index])) || (entry.from.zone === 'column' && tilesAt(position, entry.from).length + entry.ids.length > 12)) return 'Повреждена история переносов';
+  if (entry.autoRevealedId !== null) {
+    const revealed = entry.from.zone === 'column' ? position.columns[entry.from.index]?.[0] : null;
+    if (!Number.isInteger(entry.autoRevealedId) || !revealed?.open || revealed.id !== entry.autoRevealedId) return 'Повреждена история автоматического раскрытия';
+    revealed.open = false;
+  }
   put(position, entry.from, take(position, entry.to, entry.ids.length));
   return null;
 }
@@ -170,7 +175,10 @@ export function applyAction(state: GameState, action: GameAction): ActionResult 
     if (error) return reject(error);
     const moved = take(position, action.from, action.count);
     put(position, action.to, moved);
-    entry = { type: 'move', from: { ...action.from }, to: { ...action.to }, ids: moved.map(tile => tile.id) };
+    const top = action.from.zone === 'column' ? position.columns[action.from.index]?.[0] : null;
+    const autoRevealedId = top && !top.open ? top.id : null;
+    if (top && autoRevealedId !== null) top.open = true;
+    entry = { type: 'move', from: { ...action.from }, to: { ...action.to }, ids: moved.map(tile => tile.id), autoRevealedId };
   }
   const next: GameState = { ...state, ...position, transfers: state.transfers + (action.type === 'move' ? 1 : 0), history: [...state.history, entry].slice(-state.config.historyLimit) };
   if (isVictory(next)) next.result = { score: scoreFor(next.transfers, next.undos, next.hints), transfers: next.transfers, undos: next.undos, hints: next.hints };

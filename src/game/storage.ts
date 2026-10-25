@@ -1,7 +1,8 @@
 import { clonePosition, isVictory, positionError, reverseHistory, scoreFor } from './game.ts';
 import type { GameState, RecordEntry, Records, Settings } from './types.ts';
 
-export const SAVE_KEY = 'secret-sort:game:v1';
+export const SAVE_KEY = 'secret-sort:game:v2';
+export const LEGACY_SAVE_KEY = 'secret-sort:game:v1';
 export const SETTINGS_KEY = 'secret-sort:settings:v1';
 export const RECORDS_KEY = 'secret-sort:records:v1';
 type StoragePort = Pick<Storage, 'getItem' | 'setItem'>;
@@ -11,7 +12,7 @@ const counter = (value: unknown): value is number => Number.isSafeInteger(value)
 export function isValidSave(value: unknown): value is GameState {
   try {
     const s = value as GameState;
-    if (!s || s.version !== 1 || typeof s.seed !== 'string' || !s.seed.length || s.seed.length > 64 || typeof s.runId !== 'string' || s.runId.length > 150 || !s.runId.length || !s.config || s.config.columns !== 10 || s.config.capacity !== 12 || s.config.historyLimit !== 80 || ![0, 4].includes(s.config.reserveCapacity) || !counter(s.transfers) || !counter(s.undos) || !counter(s.hints) || !Array.isArray(s.history) || s.history.length > 80 || positionError(s, s.config)) return false;
+    if (!s || s.version !== 2 || !['reverse-packets-v3', 'ordered-donor-v1'].includes(s.generator) || typeof s.seed !== 'string' || !s.seed.length || s.seed.length > 64 || typeof s.runId !== 'string' || s.runId.length > 150 || !s.runId.length || !s.config || s.config.columns !== 10 || s.config.capacity !== 12 || s.config.historyLimit !== 80 || ![0, 4].includes(s.config.reserveCapacity) || !counter(s.transfers) || !counter(s.undos) || !counter(s.hints) || !Array.isArray(s.history) || s.history.length > 80 || positionError(s, s.config)) return false;
     const replay = clonePosition(s);
     for (const entry of [...s.history].reverse()) {
       if (!entry || !['move', 'reveal'].includes(entry.type) || reverseHistory(replay, entry) || positionError(replay, s.config)) return false;
@@ -23,10 +24,16 @@ export function isValidSave(value: unknown): value is GameState {
 
 export function loadGame(storage: StoragePort): { game: GameState | null; warning: string | null } {
   try {
-    const text = storage.getItem(SAVE_KEY);
+    const current = storage.getItem(SAVE_KEY);
+    const text = current ?? storage.getItem(LEGACY_SAVE_KEY);
     if (!text) return { game: null, warning: null };
     if (text.length > 300_000) return { game: null, warning: 'Сохранение слишком большое. Можно начать новую партию' };
-    const data: unknown = JSON.parse(text);
+    let data: unknown = JSON.parse(text);
+    // Keep the exact old board/history. Old transfers have no automatic reveal;
+    // new transfers use the atomic operation. The v1 backup is never overwritten.
+    if (current === null && data && typeof data === 'object' && 'version' in data && data.version === 1 && 'history' in data && Array.isArray(data.history)) {
+      data = { ...data, version: 2, generator: 'ordered-donor-v1', history: data.history.map(entry => entry?.type === 'move' ? { ...entry, autoRevealedId: null } : entry) };
+    }
     if (!isValidSave(data)) return { game: null, warning: 'Сохранение повреждено или устарело. Можно начать новую партию' };
     return { game: data, warning: null };
   } catch { return { game: null, warning: 'Сохранение недоступно. Можно играть без него' }; }
@@ -62,7 +69,7 @@ export function loadRecords(storage: StoragePort): Records {
 
 export function recordVictory(records: Records, game: GameState, date: string): Records {
   if (!game.result || !isVictory(game) || records.completedRuns.includes(game.runId)) return records;
-  const result: RecordEntry = { ...game.result, seed: game.seed, runId: game.runId, date };
+  const result: RecordEntry = { ...game.result, seed: game.seed, runId: game.runId, date, generator: game.generator };
   return { wins: records.wins + 1,
     bestScore: !records.bestScore || result.score > records.bestScore.score ? result : records.bestScore,
     fewestMoves: !records.fewestMoves || result.transfers < records.fewestMoves.transfers ? result : records.fewestMoves,

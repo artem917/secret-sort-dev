@@ -217,5 +217,42 @@ button, input, select { color: inherit; }
   .board-scroll { max-height: none; }
   .menu-card { margin: 20px auto; }
 }
+/* Same artwork and surfaces; only the phone game's geometry is fitted. */
+@media (max-width: 680px) {
+  :root { --cell: min(calc((100vw - 64px) / 10), calc((100svh - 184px) / 12), 40px); }
+  .app-shell.is-playing { padding: max(6px,env(safe-area-inset-top)) max(6px,env(safe-area-inset-right)) max(6px,env(safe-area-inset-bottom)) max(6px,env(safe-area-inset-left)); }
+  .is-playing .game-header { grid-template-columns: 102px minmax(0,1fr) 28px; gap: 4px; margin: 0 0 6px; align-items: center; }
+  .is-playing .logo-small { font-size: 17px; letter-spacing: -.9px; }
+  .is-playing .logo-small i { width: 17px; height: 17px; top: -2px; right: -2px; }
+  .is-playing .statistics { grid-column: 2; grid-row: 1; width: 100%; gap: 0; padding: 3px 0; border-radius: 11px; }
+  .is-playing .statistics > div { display: flex; flex-direction: column; gap: 2px; padding: 0 2px; line-height: 1; }
+  .is-playing .statistics b { font-size: 15px; line-height: 1; }
+  .is-playing .statistics b small { font-size: 8px; }
+  .is-playing .statistics span { display: block; font-size: 7px; line-height: 1; }
+  .is-playing .game-header .icon-button { grid-column: 3; grid-row: 1; width: 28px; min-height: 28px; height: 28px; font-size: 19px; border-radius: 9px; }
+  .is-playing .board-topline { min-height: 20px; height: 20px; padding: 0 2px; font-size: 9px; gap: 5px; }
+  .is-playing .selection-status { white-space: nowrap; }
+  .is-playing .seed-mobile { max-width: 100px; font-size: 8px; }
+  .is-playing .text-button { min-height: 20px; padding: 1px 3px; font-size: 8px; }
+  .is-playing .column-jumps, .is-playing .scroll-note { display: none; }
+  .is-playing .play-surface { padding: 5px; gap: 5px; border-radius: 16px; }
+  .is-playing .board-scroll { max-height: none; overflow: visible; padding: 0; }
+  .is-playing .board { gap: 1px; padding: 2px; margin: 0 auto; }
+  .is-playing .column { padding: 0; gap: 1px; grid-template-rows: 18px repeat(12,var(--cell)); border-radius: 5px; }
+  .is-playing .column-heading { font-size: 9px; }
+  .is-playing .column-heading small { font-size: 6px; margin-top: 1px; }
+  .is-playing .column .cell { padding: 0; border-radius: 5px; }
+  .is-playing .reserve-panel { padding: 4px 7px; gap: 10px; }
+  .is-playing .reserve-title { font-size: 10px; }
+  .is-playing .reserve-title > span { font-size: 8px; }
+  .is-playing .reserve-slots { gap: 6px; }
+  .is-playing .reserve-slots .cell { --cell: 32px; }
+  .is-playing .message { height: 34px; min-height: 34px; font-size: 9px; line-height: 1.15; padding: 3px 2px; }
+  .is-playing .game-controls { gap: 4px; }
+  .is-playing .game-controls > .button { min-height: 44px; padding: 3px 2px; gap: 2px; font-size: 15px; }
+  .is-playing .game-controls > .button > span { font-size: 8px; }
+  .is-playing .game-controls small { font-size: 7px; }
+  .is-playing .app-footer { display: none; }
+}
 :root[data-motion="off"] *, :root[data-motion="off"] *::before, :root[data-motion="off"] *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
