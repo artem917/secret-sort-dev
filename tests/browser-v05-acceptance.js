@@ -76,6 +76,7 @@ async (page) => {
         await p.waitForFunction(()=>window.__secretSortV05.animations()>0&&window.__secretSortV05.snapshot().replay.phase==='moving');
         motion=await p.evaluate(()=>document.getAnimations().filter(a=>a.playState==='running').map(a=>({time:a.currentTime,transform:getComputedStyle(a.effect.target).transform})));
         check(motion.length>0,'actual WebAnimations move/flip frames');await press(cmd('replay-toggle'));
+        check(await p.locator('.replay-screen .board-scroll').evaluate(n=>getComputedStyle(n).overflow)==='visible','replay reserve transfers are not clipped by field viewport');
       }
       await press(cmd('replay-toggle'));await p.waitForFunction(()=>window.__secretSortV05.snapshot().replay.playing);await press(cmd('replay-close').last());
       check((await snap()).replay===null&&await p.evaluate(()=>document.getAnimations().filter(a=>a.playState==='running').length)===0,'Close cancels all animation/timer activity');

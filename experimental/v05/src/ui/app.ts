@@ -243,6 +243,7 @@ export function mountUI(root: HTMLElement, onEvent: (event: UIEvent) => void) {
         for (const id of model.effect.ids) {
           const node = root.querySelector<HTMLElement>(`[data-tile-id="${id}"]`);
           if (!node) continue;
+          node.style.zIndex = '3';
           if (model.effect.type === 'reveal') animate(node, [{ transform: 'rotateY(-85deg) scale(.9)' }, { transform: 'rotateY(0) scale(1)' }], { duration: model.replay ? 420 / model.replay.speed : 180, easing: 'ease-out' });
           else { const before = oldRects.get(id), after = node.getBoundingClientRect(); if (before) animate(node, [{ transform: `translate(${before.x - after.x}px, ${before.y - after.y}px)`, opacity: .7 }, { transform: 'translate(0,0)', opacity: 1 }], { duration: 180, easing: 'ease-out' }); }
         }
