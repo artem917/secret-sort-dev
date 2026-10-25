@@ -12,8 +12,13 @@
     "test": "node --test tests/*.test.mjs",
     "verify:pages": "node scripts/verify-pages.mjs",
     "compare:difficulty": "node scripts/compare-difficulty.mjs",
-    "build": "npm run typecheck && vite build",
-    "preview": "vite preview --host 127.0.0.1"
+    "build": "npm run typecheck && vite build && vite build --config vite.experimental.config.ts && node scripts/verify-stable.mjs",
+    "preview": "vite preview --host 127.0.0.1",
+    "dev:v04": "vite --config vite.experimental.config.ts --host 127.0.0.1",
+    "test:v04": "node --test tests/v04*.test.mjs",
+    "experiment:v04": "node scripts/experiment-v04.mjs",
+    "verify:pages:v04": "node scripts/verify-pages-v04.mjs",
+    "playtest:v04": "node scripts/visible-play-v04.mjs"
   },
   "devDependencies": {
     "typescript": "7.0.2",

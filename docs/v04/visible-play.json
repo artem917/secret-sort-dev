@@ -1,0 +1,1244 @@
+{
+  "scope": "Frozen shuffle-0..31,4reserve; closed kinds are masked -1; no seed/certificate input to policy; current engine and actual Undo80",
+  "summary": {
+    "greedy400": {
+      "outcomes": {
+        "limit": 18,
+        "WIN": 7,
+        "tried-actions-stall": 7
+      },
+      "forwardAtFinal": {
+        "WIN": 7,
+        "LOSE": 16,
+        "UNKNOWN": 9
+      }
+    },
+    "explore2000": {
+      "outcomes": {
+        "limit": 28,
+        "WIN": 4
+      },
+      "forwardAtFinal": {
+        "WIN": 6,
+        "LOSE": 11,
+        "UNKNOWN": 15
+      }
+    }
+  },
+  "results": [
+    {
+      "seed": "shuffle-0",
+      "policy": "greedy400",
+      "outcome": "limit",
+      "actions": 400,
+      "moves": 390,
+      "undos": 0,
+      "reserveEntries": 34,
+      "groupMoves": 194,
+      "forwardAtFinal": {
+        "status": "LOSE",
+        "reason": "reachable-graph-exhausted",
+        "expanded": 143,
+        "discovered": 143,
+        "generated": 1256,
+        "duplicates": 1114,
+        "frontier": 0,
+        "elapsedMs": 4.765799999999999
+      }
+    },
+    {
+      "seed": "shuffle-1",
+      "policy": "greedy400",
+      "outcome": "WIN",
+      "actions": 123,
+      "moves": 113,
+      "undos": 0,
+      "reserveEntries": 11,
+      "groupMoves": 66,
+      "forwardAtFinal": {
+        "status": "WIN",
+        "reason": "actual-engine-victory"
+      }
+    },
+    {
+      "seed": "shuffle-2",
+      "policy": "greedy400",
+      "outcome": "limit",
+      "actions": 400,
+      "moves": 390,
+      "undos": 0,
+      "reserveEntries": 157,
+      "groupMoves": 77,
+      "forwardAtFinal": {
+        "status": "LOSE",
+        "reason": "reachable-graph-exhausted",
+        "expanded": 78,
+        "discovered": 78,
+        "generated": 518,
+        "duplicates": 441,
+        "frontier": 0,
+        "elapsedMs": 1.7195999999999998
+      }
+    },
+    {
+      "seed": "shuffle-3",
+      "policy": "greedy400",
+      "outcome": "WIN",
+      "actions": 334,
+      "moves": 324,
+      "undos": 0,
+      "reserveEntries": 61,
+      "groupMoves": 145,
+      "forwardAtFinal": {
+        "status": "WIN",
+        "reason": "actual-engine-victory"
+      }
+    },
+    {
+      "seed": "shuffle-4",
+      "policy": "greedy400",
+      "outcome": "limit",
+      "actions": 400,
+      "moves": 390,
+      "undos": 0,
+      "reserveEntries": 200,
+      "groupMoves": 58,
+      "forwardAtFinal": {
+        "status": "UNKNOWN",
+        "reason": "state-budget",
+        "expanded": 167,
+        "discovered": 1000,
+        "generated": 2292,
+        "duplicates": 1292,
+        "frontier": 833,
+        "elapsedMs": 9.932999999999993
+      }
+    },
+    {
+      "seed": "shuffle-5",
+      "policy": "greedy400",
+      "outcome": "WIN",
+      "actions": 200,
+      "moves": 190,
+      "undos": 0,
+      "reserveEntries": 43,
+      "groupMoves": 73,
+      "forwardAtFinal": {
+        "status": "WIN",
+        "reason": "actual-engine-victory"
+      }
+    },
+    {
+      "seed": "shuffle-6",
+      "policy": "greedy400",
+      "outcome": "limit",
+      "actions": 400,
+      "moves": 390,
+      "undos": 0,
+      "reserveEntries": 84,
+      "groupMoves": 185,
+      "forwardAtFinal": {
+        "status": "LOSE",
+        "reason": "reachable-graph-exhausted",
+        "expanded": 81,
+        "discovered": 81,
+        "generated": 784,
+        "duplicates": 704,
+        "frontier": 0,
+        "elapsedMs": 2.0722000000000094
+      }
+    },
+    {
+      "seed": "shuffle-7",
+      "policy": "greedy400",
+      "outcome": "limit",
+      "actions": 400,
+      "moves": 390,
+      "undos": 0,
+      "reserveEntries": 189,
+      "groupMoves": 20,
+      "forwardAtFinal": {
+        "status": "UNKNOWN",
+        "reason": "state-budget",
+        "expanded": 252,
+        "discovered": 1000,
+        "generated": 4234,
+        "duplicates": 3234,
+        "frontier": 748,
+        "elapsedMs": 8.618300000000005
+      }
+    },
+    {
+      "seed": "shuffle-8",
+      "policy": "greedy400",
+      "outcome": "tried-actions-stall",
+      "actions": 62,
+      "moves": 52,
+      "undos": 0,
+      "reserveEntries": 4,
+      "groupMoves": 33,
+      "forwardAtFinal": {
+        "status": "LOSE",
+        "reason": "reachable-graph-exhausted",
+        "expanded": 12,
+        "discovered": 12,
+        "generated": 60,
+        "duplicates": 49,
+        "frontier": 0,
+        "elapsedMs": 0.23439999999999372
+      }
+    },
+    {
+      "seed": "shuffle-9",
+      "policy": "greedy400",
+      "outcome": "limit",
+      "actions": 400,
+      "moves": 390,
+      "undos": 0,
+      "reserveEntries": 144,
+      "groupMoves": 78,
+      "forwardAtFinal": {
+        "status": "LOSE",
+        "reason": "reachable-graph-exhausted",
+        "expanded": 87,
+        "discovered": 87,
+        "generated": 579,
+        "duplicates": 493,
+        "frontier": 0,
+        "elapsedMs": 1.4003999999999905
+      }
+    },
+    {
+      "seed": "shuffle-10",
+      "policy": "greedy400",
+      "outcome": "tried-actions-stall",
+      "actions": 88,
+      "moves": 78,
+      "undos": 0,
+      "reserveEntries": 4,
+      "groupMoves": 42,
+      "forwardAtFinal": {
+        "status": "LOSE",
+        "reason": "reachable-graph-exhausted",
+        "expanded": 12,
+        "discovered": 12,
+        "generated": 60,
+        "duplicates": 49,
+        "frontier": 0,
+        "elapsedMs": 0.21869999999998413
+      }
+    },
+    {
+      "seed": "shuffle-11",
+      "policy": "greedy400",
+      "outcome": "tried-actions-stall",
+      "actions": 66,
+      "moves": 56,
+      "undos": 0,
+      "reserveEntries": 6,
+      "groupMoves": 34,
+      "forwardAtFinal": {
+        "status": "LOSE",
+        "reason": "reachable-graph-exhausted",
+        "expanded": 6,
+        "discovered": 6,
+        "generated": 30,
+        "duplicates": 25,
+        "frontier": 0,
+        "elapsedMs": 0.13050000000001205
+      }
+    },
+    {
+      "seed": "shuffle-12",
+      "policy": "greedy400",
+      "outcome": "limit",
+      "actions": 400,
+      "moves": 390,
+      "undos": 0,
+      "reserveEntries": 28,
+      "groupMoves": 317,
+      "forwardAtFinal": {
+        "status": "UNKNOWN",
+        "reason": "state-budget",
+        "expanded": 111,
+        "discovered": 1000,
+        "generated": 2300,
+        "duplicates": 1300,
+        "frontier": 889,
+        "elapsedMs": 6.058199999999999
+      }
+    },
+    {
+      "seed": "shuffle-13",
+      "policy": "greedy400",
+      "outcome": "limit",
+      "actions": 400,
+      "moves": 390,
+      "undos": 0,
+      "reserveEntries": 217,
+      "groupMoves": 11,
+      "forwardAtFinal": {
+        "status": "LOSE",
+        "reason": "reachable-graph-exhausted",
+        "expanded": 121,
+        "discovered": 121,
+        "generated": 725,
+        "duplicates": 605,
+        "frontier": 0,
+        "elapsedMs": 2.1084999999999923
+      }
+    },
+    {
+      "seed": "shuffle-14",
+      "policy": "greedy400",
+      "outcome": "WIN",
+      "actions": 370,
+      "moves": 360,
+      "undos": 0,
+      "reserveEntries": 50,
+      "groupMoves": 244,
+      "forwardAtFinal": {
+        "status": "WIN",
+        "reason": "actual-engine-victory"
+      }
+    },
+    {
+      "seed": "shuffle-15",
+      "policy": "greedy400",
+      "outcome": "limit",
+      "actions": 400,
+      "moves": 390,
+      "undos": 0,
+      "reserveEntries": 152,
+      "groupMoves": 55,
+      "forwardAtFinal": {
+        "status": "UNKNOWN",
+        "reason": "state-budget",
+        "expanded": 266,
+        "discovered": 1000,
+        "generated": 4129,
+        "duplicates": 3129,
+        "frontier": 734,
+        "elapsedMs": 9.227300000000014
+      }
+    },
+    {
+      "seed": "shuffle-16",
+      "policy": "greedy400",
+      "outcome": "WIN",
+      "actions": 226,
+      "moves": 216,
+      "undos": 0,
+      "reserveEntries": 33,
+      "groupMoves": 133,
+      "forwardAtFinal": {
+        "status": "WIN",
+        "reason": "actual-engine-victory"
+      }
+    },
+    {
+      "seed": "shuffle-17",
+      "policy": "greedy400",
+      "outcome": "WIN",
+      "actions": 123,
+      "moves": 113,
+      "undos": 0,
+      "reserveEntries": 11,
+      "groupMoves": 64,
+      "forwardAtFinal": {
+        "status": "WIN",
+        "reason": "actual-engine-victory"
+      }
+    },
+    {
+      "seed": "shuffle-18",
+      "policy": "greedy400",
+      "outcome": "tried-actions-stall",
+      "actions": 194,
+      "moves": 184,
+      "undos": 0,
+      "reserveEntries": 26,
+      "groupMoves": 107,
+      "forwardAtFinal": {
+        "status": "LOSE",
+        "reason": "reachable-graph-exhausted",
+        "expanded": 8,
+        "discovered": 8,
+        "generated": 56,
+        "duplicates": 49,
+        "frontier": 0,
+        "elapsedMs": 0.18429999999995061
+      }
+    },
+    {
+      "seed": "shuffle-19",
+      "policy": "greedy400",
+      "outcome": "limit",
+      "actions": 400,
+      "moves": 390,
+      "undos": 0,
+      "reserveEntries": 226,
+      "groupMoves": 19,
+      "forwardAtFinal": {
+        "status": "UNKNOWN",
+        "reason": "state-budget",
+        "expanded": 70,
+        "discovered": 1000,
+        "generated": 1467,
+        "duplicates": 467,
+        "frontier": 930,
+        "elapsedMs": 3.8705999999999676
+      }
+    },
+    {
+      "seed": "shuffle-20",
+      "policy": "greedy400",
+      "outcome": "limit",
+      "actions": 400,
+      "moves": 390,
+      "undos": 0,
+      "reserveEntries": 146,
+      "groupMoves": 72,
+      "forwardAtFinal": {
+        "status": "UNKNOWN",
+        "reason": "state-budget",
+        "expanded": 190,
+        "discovered": 1000,
+        "generated": 3083,
+        "duplicates": 2083,
+        "frontier": 810,
+        "elapsedMs": 8.429100000000005
+      }
+    },
+    {
+      "seed": "shuffle-21",
+      "policy": "greedy400",
+      "outcome": "tried-actions-stall",
+      "actions": 242,
+      "moves": 232,
+      "undos": 0,
+      "reserveEntries": 4,
+      "groupMoves": 135,
+      "forwardAtFinal": {
+        "status": "LOSE",
+        "reason": "reachable-graph-exhausted",
+        "expanded": 25,
+        "discovered": 25,
+        "generated": 200,
+        "duplicates": 176,
+        "frontier": 0,
+        "elapsedMs": 0.588799999999992
+      }
+    },
+    {
+      "seed": "shuffle-22",
+      "policy": "greedy400",
+      "outcome": "WIN",
+      "actions": 123,
+      "moves": 113,
+      "undos": 0,
+      "reserveEntries": 10,
+      "groupMoves": 71,
+      "forwardAtFinal": {
+        "status": "WIN",
+        "reason": "actual-engine-victory"
+      }
+    },
+    {
+      "seed": "shuffle-23",
+      "policy": "greedy400",
+      "outcome": "limit",
+      "actions": 400,
+      "moves": 390,
+      "undos": 0,
+      "reserveEntries": 15,
+      "groupMoves": 344,
+      "forwardAtFinal": {
+        "status": "LOSE",
+        "reason": "reachable-graph-exhausted",
+        "expanded": 91,
+        "discovered": 91,
+        "generated": 972,
+        "duplicates": 882,
+        "frontier": 0,
+        "elapsedMs": 2.1368999999999687
+      }
+    },
+    {
+      "seed": "shuffle-24",
+      "policy": "greedy400",
+      "outcome": "limit",
+      "actions": 400,
+      "moves": 390,
+      "undos": 0,
+      "reserveEntries": 149,
+      "groupMoves": 91,
+      "forwardAtFinal": {
+        "status": "LOSE",
+        "reason": "reachable-graph-exhausted",
+        "expanded": 51,
+        "discovered": 51,
+        "generated": 340,
+        "duplicates": 290,
+        "frontier": 0,
+        "elapsedMs": 0.8429999999999609
+      }
+    },
+    {
+      "seed": "shuffle-25",
+      "policy": "greedy400",
+      "outcome": "limit",
+      "actions": 400,
+      "moves": 390,
+      "undos": 0,
+      "reserveEntries": 202,
+      "groupMoves": 51,
+      "forwardAtFinal": {
+        "status": "LOSE",
+        "reason": "reachable-graph-exhausted",
+        "expanded": 176,
+        "discovered": 176,
+        "generated": 1238,
+        "duplicates": 1063,
+        "frontier": 0,
+        "elapsedMs": 3.1838000000000193
+      }
+    },
+    {
+      "seed": "shuffle-26",
+      "policy": "greedy400",
+      "outcome": "limit",
+      "actions": 400,
+      "moves": 390,
+      "undos": 0,
+      "reserveEntries": 205,
+      "groupMoves": 13,
+      "forwardAtFinal": {
+        "status": "UNKNOWN",
+        "reason": "state-budget",
+        "expanded": 194,
+        "discovered": 1000,
+        "generated": 2169,
+        "duplicates": 1169,
+        "frontier": 806,
+        "elapsedMs": 6.032500000000027
+      }
+    },
+    {
+      "seed": "shuffle-27",
+      "policy": "greedy400",
+      "outcome": "limit",
+      "actions": 400,
+      "moves": 390,
+      "undos": 0,
+      "reserveEntries": 189,
+      "groupMoves": 21,
+      "forwardAtFinal": {
+        "status": "UNKNOWN",
+        "reason": "state-budget",
+        "expanded": 494,
+        "discovered": 1000,
+        "generated": 5475,
+        "duplicates": 4475,
+        "frontier": 506,
+        "elapsedMs": 13.385500000000036
+      }
+    },
+    {
+      "seed": "shuffle-28",
+      "policy": "greedy400",
+      "outcome": "limit",
+      "actions": 400,
+      "moves": 390,
+      "undos": 0,
+      "reserveEntries": 63,
+      "groupMoves": 213,
+      "forwardAtFinal": {
+        "status": "UNKNOWN",
+        "reason": "state-budget",
+        "expanded": 111,
+        "discovered": 1000,
+        "generated": 3057,
+        "duplicates": 2057,
+        "frontier": 889,
+        "elapsedMs": 6.474499999999978
+      }
+    },
+    {
+      "seed": "shuffle-29",
+      "policy": "greedy400",
+      "outcome": "tried-actions-stall",
+      "actions": 64,
+      "moves": 54,
+      "undos": 0,
+      "reserveEntries": 6,
+      "groupMoves": 32,
+      "forwardAtFinal": {
+        "status": "LOSE",
+        "reason": "reachable-graph-exhausted",
+        "expanded": 6,
+        "discovered": 6,
+        "generated": 30,
+        "duplicates": 25,
+        "frontier": 0,
+        "elapsedMs": 0.10410000000001673
+      }
+    },
+    {
+      "seed": "shuffle-30",
+      "policy": "greedy400",
+      "outcome": "tried-actions-stall",
+      "actions": 148,
+      "moves": 138,
+      "undos": 0,
+      "reserveEntries": 5,
+      "groupMoves": 89,
+      "forwardAtFinal": {
+        "status": "LOSE",
+        "reason": "reachable-graph-exhausted",
+        "expanded": 18,
+        "discovered": 18,
+        "generated": 126,
+        "duplicates": 109,
+        "frontier": 0,
+        "elapsedMs": 0.3060999999999581
+      }
+    },
+    {
+      "seed": "shuffle-31",
+      "policy": "greedy400",
+      "outcome": "limit",
+      "actions": 400,
+      "moves": 390,
+      "undos": 0,
+      "reserveEntries": 19,
+      "groupMoves": 263,
+      "forwardAtFinal": {
+        "status": "LOSE",
+        "reason": "reachable-graph-exhausted",
+        "expanded": 71,
+        "discovered": 71,
+        "generated": 616,
+        "duplicates": 546,
+        "frontier": 0,
+        "elapsedMs": 1.5190000000000055
+      }
+    },
+    {
+      "seed": "shuffle-0",
+      "policy": "explore2000",
+      "outcome": "limit",
+      "actions": 2000,
+      "moves": 1036,
+      "undos": 954,
+      "reserveEntries": 277,
+      "groupMoves": 217,
+      "forwardAtFinal": {
+        "status": "LOSE",
+        "reason": "reachable-graph-exhausted",
+        "expanded": 31,
+        "discovered": 31,
+        "generated": 144,
+        "duplicates": 114,
+        "frontier": 0,
+        "elapsedMs": 0.45479999999997744
+      }
+    },
+    {
+      "seed": "shuffle-1",
+      "policy": "explore2000",
+      "outcome": "WIN",
+      "actions": 123,
+      "moves": 113,
+      "undos": 0,
+      "reserveEntries": 11,
+      "groupMoves": 66,
+      "forwardAtFinal": {
+        "status": "WIN",
+        "reason": "actual-engine-victory"
+      }
+    },
+    {
+      "seed": "shuffle-2",
+      "policy": "explore2000",
+      "outcome": "limit",
+      "actions": 2000,
+      "moves": 1024,
+      "undos": 966,
+      "reserveEntries": 141,
+      "groupMoves": 307,
+      "forwardAtFinal": {
+        "status": "LOSE",
+        "reason": "reachable-graph-exhausted",
+        "expanded": 78,
+        "discovered": 78,
+        "generated": 518,
+        "duplicates": 441,
+        "frontier": 0,
+        "elapsedMs": 1.2726000000000113
+      }
+    },
+    {
+      "seed": "shuffle-3",
+      "policy": "explore2000",
+      "outcome": "limit",
+      "actions": 2000,
+      "moves": 1162,
+      "undos": 828,
+      "reserveEntries": 91,
+      "groupMoves": 592,
+      "forwardAtFinal": {
+        "status": "UNKNOWN",
+        "reason": "state-budget",
+        "expanded": 82,
+        "discovered": 1000,
+        "generated": 2321,
+        "duplicates": 1321,
+        "frontier": 918,
+        "elapsedMs": 5.019999999999982
+      }
+    },
+    {
+      "seed": "shuffle-4",
+      "policy": "explore2000",
+      "outcome": "limit",
+      "actions": 2000,
+      "moves": 1159,
+      "undos": 831,
+      "reserveEntries": 183,
+      "groupMoves": 219,
+      "forwardAtFinal": {
+        "status": "UNKNOWN",
+        "reason": "state-budget",
+        "expanded": 199,
+        "discovered": 1000,
+        "generated": 2730,
+        "duplicates": 1730,
+        "frontier": 801,
+        "elapsedMs": 7.228399999999965
+      }
+    },
+    {
+      "seed": "shuffle-5",
+      "policy": "explore2000",
+      "outcome": "limit",
+      "actions": 2000,
+      "moves": 1135,
+      "undos": 855,
+      "reserveEntries": 122,
+      "groupMoves": 320,
+      "forwardAtFinal": {
+        "status": "UNKNOWN",
+        "reason": "state-budget",
+        "expanded": 87,
+        "discovered": 1000,
+        "generated": 2041,
+        "duplicates": 1041,
+        "frontier": 913,
+        "elapsedMs": 4.907100000000014
+      }
+    },
+    {
+      "seed": "shuffle-6",
+      "policy": "explore2000",
+      "outcome": "limit",
+      "actions": 2000,
+      "moves": 1124,
+      "undos": 866,
+      "reserveEntries": 125,
+      "groupMoves": 372,
+      "forwardAtFinal": {
+        "status": "LOSE",
+        "reason": "reachable-graph-exhausted",
+        "expanded": 61,
+        "discovered": 61,
+        "generated": 468,
+        "duplicates": 408,
+        "frontier": 0,
+        "elapsedMs": 1.2461999999999307
+      }
+    },
+    {
+      "seed": "shuffle-7",
+      "policy": "explore2000",
+      "outcome": "limit",
+      "actions": 2000,
+      "moves": 1158,
+      "undos": 832,
+      "reserveEntries": 271,
+      "groupMoves": 25,
+      "forwardAtFinal": {
+        "status": "UNKNOWN",
+        "reason": "state-budget",
+        "expanded": 314,
+        "discovered": 1000,
+        "generated": 4613,
+        "duplicates": 3613,
+        "frontier": 686,
+        "elapsedMs": 10.522000000000048
+      }
+    },
+    {
+      "seed": "shuffle-8",
+      "policy": "explore2000",
+      "outcome": "limit",
+      "actions": 2000,
+      "moves": 1124,
+      "undos": 866,
+      "reserveEntries": 101,
+      "groupMoves": 358,
+      "forwardAtFinal": {
+        "status": "UNKNOWN",
+        "reason": "state-budget",
+        "expanded": 102,
+        "discovered": 1000,
+        "generated": 2182,
+        "duplicates": 1182,
+        "frontier": 898,
+        "elapsedMs": 5.110000000000014
+      }
+    },
+    {
+      "seed": "shuffle-9",
+      "policy": "explore2000",
+      "outcome": "limit",
+      "actions": 2000,
+      "moves": 1027,
+      "undos": 963,
+      "reserveEntries": 135,
+      "groupMoves": 283,
+      "forwardAtFinal": {
+        "status": "LOSE",
+        "reason": "reachable-graph-exhausted",
+        "expanded": 87,
+        "discovered": 87,
+        "generated": 579,
+        "duplicates": 493,
+        "frontier": 0,
+        "elapsedMs": 1.2282000000000153
+      }
+    },
+    {
+      "seed": "shuffle-10",
+      "policy": "explore2000",
+      "outcome": "limit",
+      "actions": 2000,
+      "moves": 1121,
+      "undos": 869,
+      "reserveEntries": 393,
+      "groupMoves": 126,
+      "forwardAtFinal": {
+        "status": "LOSE",
+        "reason": "reachable-graph-exhausted",
+        "expanded": 360,
+        "discovered": 360,
+        "generated": 2394,
+        "duplicates": 2035,
+        "frontier": 0,
+        "elapsedMs": 5.688199999999938
+      }
+    },
+    {
+      "seed": "shuffle-11",
+      "policy": "explore2000",
+      "outcome": "WIN",
+      "actions": 1815,
+      "moves": 1077,
+      "undos": 728,
+      "reserveEntries": 94,
+      "groupMoves": 691,
+      "forwardAtFinal": {
+        "status": "WIN",
+        "reason": "actual-engine-victory"
+      }
+    },
+    {
+      "seed": "shuffle-12",
+      "policy": "explore2000",
+      "outcome": "limit",
+      "actions": 2000,
+      "moves": 1170,
+      "undos": 820,
+      "reserveEntries": 64,
+      "groupMoves": 805,
+      "forwardAtFinal": {
+        "status": "UNKNOWN",
+        "reason": "state-budget",
+        "expanded": 108,
+        "discovered": 1000,
+        "generated": 2266,
+        "duplicates": 1266,
+        "frontier": 892,
+        "elapsedMs": 4.855299999999943
+      }
+    },
+    {
+      "seed": "shuffle-13",
+      "policy": "explore2000",
+      "outcome": "limit",
+      "actions": 2000,
+      "moves": 1190,
+      "undos": 800,
+      "reserveEntries": 329,
+      "groupMoves": 11,
+      "forwardAtFinal": {
+        "status": "LOSE",
+        "reason": "reachable-graph-exhausted",
+        "expanded": 121,
+        "discovered": 121,
+        "generated": 725,
+        "duplicates": 605,
+        "frontier": 0,
+        "elapsedMs": 1.7104000000000497
+      }
+    },
+    {
+      "seed": "shuffle-14",
+      "policy": "explore2000",
+      "outcome": "limit",
+      "actions": 2000,
+      "moves": 1150,
+      "undos": 840,
+      "reserveEntries": 55,
+      "groupMoves": 743,
+      "forwardAtFinal": {
+        "status": "WIN",
+        "reason": "replayable-forward-trace",
+        "expanded": 77,
+        "discovered": 955,
+        "generated": 2949,
+        "duplicates": 1995,
+        "frontier": 877,
+        "elapsedMs": 7.305399999999963
+      }
+    },
+    {
+      "seed": "shuffle-15",
+      "policy": "explore2000",
+      "outcome": "limit",
+      "actions": 2000,
+      "moves": 1132,
+      "undos": 858,
+      "reserveEntries": 121,
+      "groupMoves": 317,
+      "forwardAtFinal": {
+        "status": "UNKNOWN",
+        "reason": "state-budget",
+        "expanded": 262,
+        "discovered": 1000,
+        "generated": 3923,
+        "duplicates": 2923,
+        "frontier": 738,
+        "elapsedMs": 12.02299999999991
+      }
+    },
+    {
+      "seed": "shuffle-16",
+      "policy": "explore2000",
+      "outcome": "limit",
+      "actions": 2000,
+      "moves": 1160,
+      "undos": 830,
+      "reserveEntries": 96,
+      "groupMoves": 584,
+      "forwardAtFinal": {
+        "status": "UNKNOWN",
+        "reason": "state-budget",
+        "expanded": 191,
+        "discovered": 1000,
+        "generated": 3182,
+        "duplicates": 2182,
+        "frontier": 809,
+        "elapsedMs": 7.506900000000087
+      }
+    },
+    {
+      "seed": "shuffle-17",
+      "policy": "explore2000",
+      "outcome": "WIN",
+      "actions": 123,
+      "moves": 113,
+      "undos": 0,
+      "reserveEntries": 11,
+      "groupMoves": 64,
+      "forwardAtFinal": {
+        "status": "WIN",
+        "reason": "actual-engine-victory"
+      }
+    },
+    {
+      "seed": "shuffle-18",
+      "policy": "explore2000",
+      "outcome": "limit",
+      "actions": 2000,
+      "moves": 1130,
+      "undos": 860,
+      "reserveEntries": 71,
+      "groupMoves": 551,
+      "forwardAtFinal": {
+        "status": "UNKNOWN",
+        "reason": "state-budget",
+        "expanded": 292,
+        "discovered": 1000,
+        "generated": 4167,
+        "duplicates": 3167,
+        "frontier": 708,
+        "elapsedMs": 8.877499999999827
+      }
+    },
+    {
+      "seed": "shuffle-19",
+      "policy": "explore2000",
+      "outcome": "limit",
+      "actions": 2000,
+      "moves": 1137,
+      "undos": 853,
+      "reserveEntries": 450,
+      "groupMoves": 19,
+      "forwardAtFinal": {
+        "status": "UNKNOWN",
+        "reason": "state-budget",
+        "expanded": 70,
+        "discovered": 1000,
+        "generated": 1488,
+        "duplicates": 488,
+        "frontier": 930,
+        "elapsedMs": 3.7898999999999887
+      }
+    },
+    {
+      "seed": "shuffle-20",
+      "policy": "explore2000",
+      "outcome": "limit",
+      "actions": 2000,
+      "moves": 1128,
+      "undos": 862,
+      "reserveEntries": 68,
+      "groupMoves": 551,
+      "forwardAtFinal": {
+        "status": "UNKNOWN",
+        "reason": "state-budget",
+        "expanded": 240,
+        "discovered": 1000,
+        "generated": 4099,
+        "duplicates": 3099,
+        "frontier": 760,
+        "elapsedMs": 8.72180000000003
+      }
+    },
+    {
+      "seed": "shuffle-21",
+      "policy": "explore2000",
+      "outcome": "limit",
+      "actions": 2000,
+      "moves": 1057,
+      "undos": 933,
+      "reserveEntries": 160,
+      "groupMoves": 441,
+      "forwardAtFinal": {
+        "status": "LOSE",
+        "reason": "reachable-graph-exhausted",
+        "expanded": 41,
+        "discovered": 41,
+        "generated": 232,
+        "duplicates": 192,
+        "frontier": 0,
+        "elapsedMs": 0.6057000000000698
+      }
+    },
+    {
+      "seed": "shuffle-22",
+      "policy": "explore2000",
+      "outcome": "WIN",
+      "actions": 123,
+      "moves": 113,
+      "undos": 0,
+      "reserveEntries": 10,
+      "groupMoves": 71,
+      "forwardAtFinal": {
+        "status": "WIN",
+        "reason": "actual-engine-victory"
+      }
+    },
+    {
+      "seed": "shuffle-23",
+      "policy": "explore2000",
+      "outcome": "limit",
+      "actions": 2000,
+      "moves": 1065,
+      "undos": 925,
+      "reserveEntries": 25,
+      "groupMoves": 748,
+      "forwardAtFinal": {
+        "status": "LOSE",
+        "reason": "reachable-graph-exhausted",
+        "expanded": 91,
+        "discovered": 91,
+        "generated": 972,
+        "duplicates": 882,
+        "frontier": 0,
+        "elapsedMs": 2.088899999999967
+      }
+    },
+    {
+      "seed": "shuffle-24",
+      "policy": "explore2000",
+      "outcome": "limit",
+      "actions": 2000,
+      "moves": 1147,
+      "undos": 843,
+      "reserveEntries": 156,
+      "groupMoves": 338,
+      "forwardAtFinal": {
+        "status": "UNKNOWN",
+        "reason": "state-budget",
+        "expanded": 794,
+        "discovered": 1000,
+        "generated": 5764,
+        "duplicates": 4764,
+        "frontier": 206,
+        "elapsedMs": 15.310600000000022
+      }
+    },
+    {
+      "seed": "shuffle-25",
+      "policy": "explore2000",
+      "outcome": "limit",
+      "actions": 2000,
+      "moves": 1154,
+      "undos": 836,
+      "reserveEntries": 167,
+      "groupMoves": 288,
+      "forwardAtFinal": {
+        "status": "LOSE",
+        "reason": "reachable-graph-exhausted",
+        "expanded": 176,
+        "discovered": 176,
+        "generated": 1238,
+        "duplicates": 1063,
+        "frontier": 0,
+        "elapsedMs": 2.887899999999945
+      }
+    },
+    {
+      "seed": "shuffle-26",
+      "policy": "explore2000",
+      "outcome": "limit",
+      "actions": 2000,
+      "moves": 1163,
+      "undos": 827,
+      "reserveEntries": 292,
+      "groupMoves": 13,
+      "forwardAtFinal": {
+        "status": "UNKNOWN",
+        "reason": "state-budget",
+        "expanded": 97,
+        "discovered": 1000,
+        "generated": 1604,
+        "duplicates": 604,
+        "frontier": 903,
+        "elapsedMs": 3.93970000000013
+      }
+    },
+    {
+      "seed": "shuffle-27",
+      "policy": "explore2000",
+      "outcome": "limit",
+      "actions": 2000,
+      "moves": 1121,
+      "undos": 869,
+      "reserveEntries": 215,
+      "groupMoves": 129,
+      "forwardAtFinal": {
+        "status": "UNKNOWN",
+        "reason": "state-budget",
+        "expanded": 466,
+        "discovered": 1000,
+        "generated": 4403,
+        "duplicates": 3403,
+        "frontier": 534,
+        "elapsedMs": 10.27189999999996
+      }
+    },
+    {
+      "seed": "shuffle-28",
+      "policy": "explore2000",
+      "outcome": "limit",
+      "actions": 2000,
+      "moves": 1142,
+      "undos": 848,
+      "reserveEntries": 64,
+      "groupMoves": 652,
+      "forwardAtFinal": {
+        "status": "UNKNOWN",
+        "reason": "state-budget",
+        "expanded": 77,
+        "discovered": 1000,
+        "generated": 2173,
+        "duplicates": 1173,
+        "frontier": 923,
+        "elapsedMs": 4.464800000000196
+      }
+    },
+    {
+      "seed": "shuffle-29",
+      "policy": "explore2000",
+      "outcome": "limit",
+      "actions": 2000,
+      "moves": 1160,
+      "undos": 830,
+      "reserveEntries": 69,
+      "groupMoves": 771,
+      "forwardAtFinal": {
+        "status": "WIN",
+        "reason": "replayable-forward-trace",
+        "expanded": 79,
+        "discovered": 964,
+        "generated": 2006,
+        "duplicates": 1043,
+        "frontier": 884,
+        "elapsedMs": 5.372700000000123
+      }
+    },
+    {
+      "seed": "shuffle-30",
+      "policy": "explore2000",
+      "outcome": "limit",
+      "actions": 2000,
+      "moves": 1081,
+      "undos": 909,
+      "reserveEntries": 35,
+      "groupMoves": 539,
+      "forwardAtFinal": {
+        "status": "LOSE",
+        "reason": "reachable-graph-exhausted",
+        "expanded": 115,
+        "discovered": 115,
+        "generated": 894,
+        "duplicates": 780,
+        "frontier": 0,
+        "elapsedMs": 1.9218000000000757
+      }
+    },
+    {
+      "seed": "shuffle-31",
+      "policy": "explore2000",
+      "outcome": "limit",
+      "actions": 2000,
+      "moves": 1094,
+      "undos": 896,
+      "reserveEntries": 128,
+      "groupMoves": 671,
+      "forwardAtFinal": {
+        "status": "LOSE",
+        "reason": "reachable-graph-exhausted",
+        "expanded": 71,
+        "discovered": 71,
+        "generated": 616,
+        "duplicates": 546,
+        "frontier": 0,
+        "elapsedMs": 1.48700000000008
+      }
+    }
+  ]
+}

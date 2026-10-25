@@ -74,3 +74,8 @@ npx --yes --package @playwright/cli -- playwright-cli -s=secret-sort-qa run-code
 ## Модули
 
 `src/game` — правила, инвентарь, история, storage, очки и ad hook; `src/generator` — обратные конструкции и verifier; `src/ui` — DOM/ввод/геометрия и отдельная тренировка; `src/main.ts` — связывание. Оригинальные SVG и фон в `public/` не менялись. Frozen fixture `tests/fixtures/v02` содержит точные исходники baseline `e05fd6c…` только для воспроизводимого сравнения и тестов миграции; в production он не импортируется.
+
+
+## Эксперимент v0.4
+
+Стабильная v0.3 остаётся по основному адресу. Эксперимент с full shuffle, трёхзначным solver и доказанными опасными ходами опубликован отдельно: [тест v0.4](https://artem917.github.io/secret-sort-dev/v04/). [Отчёт, доказательства, сравнение и ограничения](docs/v04/REPORT.md). Сохранения версий изолированы.
