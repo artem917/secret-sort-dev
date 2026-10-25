@@ -20,6 +20,8 @@
     "src",
     "vite.config.ts",
     "experimental/v04/src",
-    "vite.experimental.config.ts"
+    "vite.experimental.config.ts",
+    "experimental/v05/src",
+    "vite.v05.config.ts"
   ]
 }
