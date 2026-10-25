@@ -1,7 +1,7 @@
 {
   "name": "secret-sort-dev",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "engines": {
     "node": ">=24.13.0 <25"
@@ -9,6 +9,8 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "typecheck": "tsc --noEmit",
+    "test": "node --test tests/*.test.mjs",
+    "verify:pages": "node scripts/verify-pages.mjs",
     "build": "npm run typecheck && vite build",
     "preview": "vite preview --host 127.0.0.1"
   },
