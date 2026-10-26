@@ -1,0 +1,268 @@
+{
+  "unit": {
+    "tests": 101,
+    "passed": 101
+  },
+  "cohort": [
+    {
+      "k": 1,
+      "WIN": 5,
+      "lowerBoundLOSE": 5,
+      "equalityMatrixDistinct": 5
+    },
+    {
+      "k": 2,
+      "WIN": 4,
+      "lowerBoundLOSE": 4,
+      "equalityMatrixDistinct": 4
+    },
+    {
+      "k": 3,
+      "WIN": 4,
+      "lowerBoundLOSE": 4,
+      "equalityMatrixDistinct": 4
+    },
+    {
+      "k": 4,
+      "WIN": 5,
+      "lowerBoundLOSE": 5,
+      "equalityMatrixDistinct": 5
+    }
+  ],
+  "negativeCertificateRejections": 162,
+  "visiblePolicies": {
+    "runs": 54,
+    "wins": 3,
+    "otherResultsAreNotLOSE": true
+  },
+  "browser": {
+    "acceptance": {
+      "passed": true,
+      "reports": [
+        {
+          "k": 1,
+          "width": 1366,
+          "height": 768,
+          "checks": [
+            "ten open,98closed andzero initialactions",
+            "no concealed kind/ID inDOM",
+            "no technical fields or solver forecast",
+            "keyboard selects already open top",
+            "keyboard arrow navigates",
+            "move plus exactoneautoReveal",
+            "no permanent target highlighting",
+            "atomic Undo restores exact start",
+            "repeat identical108tiles andopen mask",
+            "actualreload restores state",
+            "only voluntary surrender ends loss",
+            "replay has same initial tenopen",
+            "replay first step is transfer",
+            "back preserves initialopen",
+            "Pause cancels progress",
+            "true9x12WIN inreplay",
+            "replay neverchanges livegame,records,save",
+            "no runtime/resource errors"
+          ],
+          "errors": [],
+          "transfers": 109
+        },
+        {
+          "k": 2,
+          "width": 320,
+          "height": 568,
+          "checks": [
+            "ten open,98closed andzero initialactions",
+            "no concealed kind/ID inDOM",
+            "no technical fields or solver forecast",
+            "move plus exactoneautoReveal",
+            "no permanent target highlighting",
+            "atomic Undo restores exact start",
+            "repeat identical108tiles andopen mask",
+            "actualreload restores state",
+            "only voluntary surrender ends loss",
+            "replay has same initial tenopen",
+            "replay first step is transfer",
+            "back preserves initialopen",
+            "Pause cancels progress",
+            "true9x12WIN inreplay",
+            "replay neverchanges livegame,records,save",
+            "no runtime/resource errors"
+          ],
+          "errors": [],
+          "transfers": 116
+        },
+        {
+          "k": 3,
+          "width": 768,
+          "height": 1024,
+          "checks": [
+            "ten open,98closed andzero initialactions",
+            "no concealed kind/ID inDOM",
+            "no technical fields or solver forecast",
+            "move plus exactoneautoReveal",
+            "no permanent target highlighting",
+            "atomic Undo restores exact start",
+            "repeat identical108tiles andopen mask",
+            "actualreload restores state",
+            "only voluntary surrender ends loss",
+            "replay has same initial tenopen",
+            "replay first step is transfer",
+            "back preserves initialopen",
+            "Pause cancels progress",
+            "true9x12WIN inreplay",
+            "replay neverchanges livegame,records,save",
+            "no runtime/resource errors"
+          ],
+          "errors": [],
+          "transfers": 124
+        },
+        {
+          "k": 4,
+          "width": 390,
+          "height": 844,
+          "checks": [
+            "ten open,98closed andzero initialactions",
+            "no concealed kind/ID inDOM",
+            "no technical fields or solver forecast",
+            "move plus exactoneautoReveal",
+            "no permanent target highlighting",
+            "atomic Undo restores exact start",
+            "repeat identical108tiles andopen mask",
+            "actualreload restores state",
+            "only voluntary surrender ends loss",
+            "replay has same initial tenopen",
+            "replay first step is transfer",
+            "back preserves initialopen",
+            "Pause cancels progress",
+            "true9x12WIN inreplay",
+            "replay neverchanges livegame,records,save",
+            "no runtime/resource errors"
+          ],
+          "errors": [],
+          "transfers": 125
+        }
+      ]
+    },
+    "noStop": {
+      "passed": true,
+      "checks": [
+        "a proved losing position remains playable",
+        "no automatic loss or solution dialog",
+        "no solver forecast in ordinary UI",
+        "solver closed graph proof independently verified",
+        "visible legal action exists 0",
+        "legal continuation 1",
+        "visible legal action exists 1",
+        "legal continuation 2",
+        "visible legal action exists 2",
+        "legal continuation 3",
+        "visible legal action exists 3",
+        "legal continuation 4",
+        "F5/resume has no forced ending",
+        "saved board exactly restored",
+        "Undo works after resume"
+      ],
+      "solverVerified": true,
+      "continuedTransfers": 8
+    },
+    "independentPlay": [
+      {
+        "seed": "policy-guided-r1-rotate-0",
+        "k": 1,
+        "strategy": "information-first",
+        "width": 390,
+        "height": 844,
+        "outcome": "WIN",
+        "transfers": 110,
+        "groups": 85,
+        "opened": 108,
+        "liveRecordWins": 1,
+        "certificateRead": false,
+        "hiddenKindsUsed": false,
+        "errors": []
+      },
+      {
+        "seed": "policy-guided-r1-rotate-0",
+        "k": 1,
+        "strategy": "space-first",
+        "width": 1366,
+        "height": 768,
+        "outcome": "WIN",
+        "transfers": 115,
+        "groups": 88,
+        "opened": 108,
+        "liveRecordWins": 1,
+        "certificateRead": false,
+        "hiddenKindsUsed": false,
+        "errors": []
+      },
+      {
+        "seed": "policy-guided-r1-rotate-0",
+        "k": 1,
+        "strategy": "rotate-kinds",
+        "width": 320,
+        "height": 568,
+        "outcome": "WIN",
+        "transfers": 118,
+        "groups": 91,
+        "opened": 108,
+        "liveRecordWins": 1,
+        "certificateRead": false,
+        "hiddenKindsUsed": false,
+        "errors": []
+      },
+      {
+        "seed": "cross-r2-14",
+        "k": 2,
+        "strategy": "rotate-kinds",
+        "width": 360,
+        "height": 740,
+        "outcome": "POLICY_EXHAUSTED",
+        "transfers": 35,
+        "groups": 10,
+        "opened": 33,
+        "liveRecordWins": 0,
+        "certificateRead": false,
+        "hiddenKindsUsed": false,
+        "errors": []
+      },
+      {
+        "seed": "cross-r3-2",
+        "k": 3,
+        "strategy": "information-first",
+        "width": 768,
+        "height": 1024,
+        "outcome": "POLICY_EXHAUSTED",
+        "transfers": 17,
+        "groups": 2,
+        "opened": 18,
+        "liveRecordWins": 0,
+        "certificateRead": false,
+        "hiddenKindsUsed": false,
+        "errors": []
+      },
+      {
+        "seed": "frontier-r4-2",
+        "k": 4,
+        "strategy": "space-first",
+        "width": 412,
+        "height": 915,
+        "outcome": "ACTION_LIMIT",
+        "transfers": 180,
+        "groups": 32,
+        "opened": 27,
+        "liveRecordWins": 0,
+        "certificateRead": false,
+        "hiddenKindsUsed": false,
+        "errors": []
+      }
+    ]
+  },
+  "hiddenAmbiguity": {
+    "sameInitialVisiblePosition": true,
+    "bothParentsWIN": true,
+    "winningChildReplay": 110,
+    "losingChildClosedStates": 64,
+    "informationFairness": "NOT_PROVEN"
+  }
+}

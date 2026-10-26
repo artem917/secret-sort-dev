@@ -1,0 +1,2779 @@
+{
+  "provenance": {
+    "baseline": "4529e74ad7438446e133ceeeb49d0ba7c1bb34d7",
+    "scope": "Same18templateID strings usedasv05seeds; these are pairedidentifiers, notidenticalboards. V05normalized10rootreveals excluded. All3policiesforward-only; noUndo ororacle. Cohortselectedbyofflinecertification/policy-guidedconstruction, notrandompopulation.",
+    "sources": {
+      "v06game": "43b72d3c6620066c7e53163a37cdd8f8038cdac2061f6c34018f4a21ce3d5d5d",
+      "v06data": "b13e15737f00528b4319c10e209720394a18945744cc5268a5c6b08899398993",
+      "v05game": "393cc102afb31ac726f2d8bb27d6ebae9a3168a95026d62791a76db7d9c4415a",
+      "policies": "3ad735bf6b077cb39fda30572e200cb03d4504195ec85bd28451506598044237"
+    }
+  },
+  "cohortAudit": [
+    {
+      "k": 1,
+      "WIN": 5,
+      "lowerBoundLOSE": 5,
+      "equalityMatrixDistinct": 5
+    },
+    {
+      "k": 2,
+      "WIN": 4,
+      "lowerBoundLOSE": 4,
+      "equalityMatrixDistinct": 4
+    },
+    {
+      "k": 3,
+      "WIN": 4,
+      "lowerBoundLOSE": 4,
+      "equalityMatrixDistinct": 4
+    },
+    {
+      "k": 4,
+      "WIN": 5,
+      "lowerBoundLOSE": 5,
+      "equalityMatrixDistinct": 5
+    }
+  ],
+  "negativeCertificateRejections": 162,
+  "v06": [
+    {
+      "difficulty": 1,
+      "strategy": "certificate",
+      "games": 5,
+      "outcomes": {
+        "WIN": 5
+      },
+      "maxRunMean": 2.6,
+      "maxRunRange": [
+        2,
+        3
+      ],
+      "adjacentMean": 0.10233763031522228,
+      "rolling12Mean": 6.744599752228046,
+      "singlesMean": 60.6,
+      "groupsMean": 50,
+      "meaningfulGroupsMean": 50,
+      "early": {
+        "positions": 144,
+        "rawLegalActionsMean": 7.701388888888889,
+        "meaningfulMovesMean": 4.458333333333333,
+        "meaningfulDirectionsMean": 4.458333333333333,
+        "activeVisibleKindsMean": 3.5625,
+        "meaningfulKindsMean": 2.173611111111111,
+        "positionsWith2MeaningfulKinds": 90,
+        "shareWith2MeaningfulKinds": 0.625,
+        "selfLoops": 0,
+        "strictReverseCycles": 9
+      },
+      "middle": {
+        "positions": 190,
+        "rawLegalActionsMean": 6.71578947368421,
+        "meaningfulMovesMean": 1.9894736842105263,
+        "meaningfulDirectionsMean": 1.9894736842105263,
+        "activeVisibleKindsMean": 1.8526315789473684,
+        "meaningfulKindsMean": 1.4,
+        "positionsWith2MeaningfulKinds": 76,
+        "shareWith2MeaningfulKinds": 0.4,
+        "selfLoops": 0,
+        "strictReverseCycles": 10
+      },
+      "late": {
+        "positions": 219,
+        "rawLegalActionsMean": 17.899543378995435,
+        "meaningfulMovesMean": 2.219178082191781,
+        "meaningfulDirectionsMean": 2.219178082191781,
+        "activeVisibleKindsMean": 2.8310502283105023,
+        "meaningfulKindsMean": 1.6666666666666667,
+        "positionsWith2MeaningfulKinds": 78,
+        "shareWith2MeaningfulKinds": 0.3561643835616438,
+        "selfLoops": 79,
+        "strictReverseCycles": 47
+      }
+    },
+    {
+      "difficulty": 1,
+      "strategy": "information-first",
+      "games": 5,
+      "outcomes": {
+        "WIN": 1,
+        "POLICY_EXHAUSTED": 4
+      },
+      "maxRunMean": 2.2,
+      "maxRunRange": [
+        2,
+        3
+      ],
+      "adjacentMean": 0.12868501529051987,
+      "rolling12Mean": 5.503030303030303,
+      "singlesMean": 16.2,
+      "groupsMean": 18.6,
+      "meaningfulGroupsMean": 18.6,
+      "early": {
+        "positions": 92,
+        "rawLegalActionsMean": 7.5,
+        "meaningfulMovesMean": 3.739130434782609,
+        "meaningfulDirectionsMean": 3.739130434782609,
+        "activeVisibleKindsMean": 3.9130434782608696,
+        "meaningfulKindsMean": 2.630434782608696,
+        "positionsWith2MeaningfulKinds": 36,
+        "shareWith2MeaningfulKinds": 0.391304347826087,
+        "selfLoops": 0,
+        "strictReverseCycles": 33
+      },
+      "middle": {
+        "positions": 37,
+        "rawLegalActionsMean": 6.648648648648648,
+        "meaningfulMovesMean": 1.5405405405405406,
+        "meaningfulDirectionsMean": 1.5405405405405406,
+        "activeVisibleKindsMean": 1.4324324324324325,
+        "meaningfulKindsMean": 1.1891891891891893,
+        "positionsWith2MeaningfulKinds": 7,
+        "shareWith2MeaningfulKinds": 0.1891891891891892,
+        "selfLoops": 0,
+        "strictReverseCycles": 1
+      },
+      "late": {
+        "positions": 45,
+        "rawLegalActionsMean": 28.733333333333334,
+        "meaningfulMovesMean": 3.088888888888889,
+        "meaningfulDirectionsMean": 3.088888888888889,
+        "activeVisibleKindsMean": 3.2,
+        "meaningfulKindsMean": 2.2222222222222223,
+        "positionsWith2MeaningfulKinds": 34,
+        "shareWith2MeaningfulKinds": 0.7555555555555555,
+        "selfLoops": 54,
+        "strictReverseCycles": 18
+      }
+    },
+    {
+      "difficulty": 1,
+      "strategy": "space-first",
+      "games": 5,
+      "outcomes": {
+        "WIN": 1,
+        "POLICY_EXHAUSTED": 4
+      },
+      "maxRunMean": 2.2,
+      "maxRunRange": [
+        2,
+        3
+      ],
+      "adjacentMean": 0.13473684210526313,
+      "rolling12Mean": 5.4884615384615385,
+      "singlesMean": 16.6,
+      "groupsMean": 19.2,
+      "meaningfulGroupsMean": 18.8,
+      "early": {
+        "positions": 92,
+        "rawLegalActionsMean": 8.630434782608695,
+        "meaningfulMovesMean": 3.7282608695652173,
+        "meaningfulDirectionsMean": 3.7282608695652173,
+        "activeVisibleKindsMean": 4.554347826086956,
+        "meaningfulKindsMean": 2.5543478260869565,
+        "positionsWith2MeaningfulKinds": 29,
+        "shareWith2MeaningfulKinds": 0.31521739130434784,
+        "selfLoops": 0,
+        "strictReverseCycles": 33
+      },
+      "middle": {
+        "positions": 41,
+        "rawLegalActionsMean": 7.829268292682927,
+        "meaningfulMovesMean": 1.4634146341463414,
+        "meaningfulDirectionsMean": 1.4634146341463414,
+        "activeVisibleKindsMean": 2.341463414634146,
+        "meaningfulKindsMean": 1.1219512195121952,
+        "positionsWith2MeaningfulKinds": 7,
+        "shareWith2MeaningfulKinds": 0.17073170731707318,
+        "selfLoops": 0,
+        "strictReverseCycles": 5
+      },
+      "late": {
+        "positions": 46,
+        "rawLegalActionsMean": 35.32608695652174,
+        "meaningfulMovesMean": 2.717391304347826,
+        "meaningfulDirectionsMean": 2.717391304347826,
+        "activeVisibleKindsMean": 7.608695652173913,
+        "meaningfulKindsMean": 1.673913043478261,
+        "positionsWith2MeaningfulKinds": 8,
+        "shareWith2MeaningfulKinds": 0.17391304347826086,
+        "selfLoops": 50,
+        "strictReverseCycles": 18
+      }
+    },
+    {
+      "difficulty": 1,
+      "strategy": "rotate-kinds",
+      "games": 5,
+      "outcomes": {
+        "WIN": 1,
+        "POLICY_EXHAUSTED": 4
+      },
+      "maxRunMean": 1.2,
+      "maxRunRange": [
+        1,
+        2
+      ],
+      "adjacentMean": 0.018803418803418803,
+      "rolling12Mean": 4.762883845126836,
+      "singlesMean": 18.2,
+      "groupsMean": 19.8,
+      "meaningfulGroupsMean": 19.4,
+      "early": {
+        "positions": 109,
+        "rawLegalActionsMean": 5.81651376146789,
+        "meaningfulMovesMean": 2.6605504587155964,
+        "meaningfulDirectionsMean": 2.6605504587155964,
+        "activeVisibleKindsMean": 2.944954128440367,
+        "meaningfulKindsMean": 1.5321100917431192,
+        "positionsWith2MeaningfulKinds": 44,
+        "shareWith2MeaningfulKinds": 0.4036697247706422,
+        "selfLoops": 0,
+        "strictReverseCycles": 42
+      },
+      "middle": {
+        "positions": 36,
+        "rawLegalActionsMean": 5.75,
+        "meaningfulMovesMean": 1.4166666666666667,
+        "meaningfulDirectionsMean": 1.4166666666666667,
+        "activeVisibleKindsMean": 1,
+        "meaningfulKindsMean": 1,
+        "positionsWith2MeaningfulKinds": 0,
+        "shareWith2MeaningfulKinds": 0,
+        "selfLoops": 0,
+        "strictReverseCycles": 0
+      },
+      "late": {
+        "positions": 45,
+        "rawLegalActionsMean": 33.53333333333333,
+        "meaningfulMovesMean": 2.7555555555555555,
+        "meaningfulDirectionsMean": 2.7555555555555555,
+        "activeVisibleKindsMean": 7.4222222222222225,
+        "meaningfulKindsMean": 1.6444444444444444,
+        "positionsWith2MeaningfulKinds": 8,
+        "shareWith2MeaningfulKinds": 0.17777777777777778,
+        "selfLoops": 45,
+        "strictReverseCycles": 17
+      }
+    },
+    {
+      "difficulty": 2,
+      "strategy": "certificate",
+      "games": 4,
+      "outcomes": {
+        "WIN": 4
+      },
+      "maxRunMean": 3.25,
+      "maxRunRange": [
+        3,
+        4
+      ],
+      "adjacentMean": 0.2042922728606767,
+      "rolling12Mean": 6.274041612057667,
+      "singlesMean": 78.75,
+      "groupsMean": 40,
+      "meaningfulGroupsMean": 40,
+      "early": {
+        "positions": 130,
+        "rawLegalActionsMean": 13.76923076923077,
+        "meaningfulMovesMean": 6.346153846153846,
+        "meaningfulDirectionsMean": 6.346153846153846,
+        "activeVisibleKindsMean": 5.246153846153846,
+        "meaningfulKindsMean": 3.3153846153846156,
+        "positionsWith2MeaningfulKinds": 75,
+        "shareWith2MeaningfulKinds": 0.5769230769230769,
+        "selfLoops": 32,
+        "strictReverseCycles": 34
+      },
+      "middle": {
+        "positions": 162,
+        "rawLegalActionsMean": 10.228395061728396,
+        "meaningfulMovesMean": 2.1358024691358026,
+        "meaningfulDirectionsMean": 2.1358024691358026,
+        "activeVisibleKindsMean": 3.6728395061728394,
+        "meaningfulKindsMean": 1.345679012345679,
+        "positionsWith2MeaningfulKinds": 22,
+        "shareWith2MeaningfulKinds": 0.13580246913580246,
+        "selfLoops": 45,
+        "strictReverseCycles": 18
+      },
+      "late": {
+        "positions": 183,
+        "rawLegalActionsMean": 22.759562841530055,
+        "meaningfulMovesMean": 2.633879781420765,
+        "meaningfulDirectionsMean": 2.633879781420765,
+        "activeVisibleKindsMean": 4.863387978142076,
+        "meaningfulKindsMean": 1.6065573770491803,
+        "positionsWith2MeaningfulKinds": 71,
+        "shareWith2MeaningfulKinds": 0.3879781420765027,
+        "selfLoops": 175,
+        "strictReverseCycles": 56
+      }
+    },
+    {
+      "difficulty": 2,
+      "strategy": "information-first",
+      "games": 4,
+      "outcomes": {
+        "POLICY_EXHAUSTED": 3,
+        "ACTION_LIMIT": 1
+      },
+      "maxRunMean": 6.5,
+      "maxRunRange": [
+        2,
+        8
+      ],
+      "adjacentMean": 0.26700320681529227,
+      "rolling12Mean": 2.983406179809385,
+      "singlesMean": 205,
+      "groupsMean": 21.75,
+      "meaningfulGroupsMean": 6,
+      "early": {
+        "positions": 907,
+        "rawLegalActionsMean": 18.04851157662624,
+        "meaningfulMovesMean": 1.1675854465270121,
+        "meaningfulDirectionsMean": 1.1675854465270121,
+        "activeVisibleKindsMean": 7.306504961411246,
+        "meaningfulKindsMean": 0.7816979051819184,
+        "positionsWith2MeaningfulKinds": 73,
+        "shareWith2MeaningfulKinds": 0.0804851157662624,
+        "selfLoops": 452,
+        "strictReverseCycles": 1044
+      },
+      "middle": {
+        "positions": 0,
+        "rawLegalActionsMean": null,
+        "meaningfulMovesMean": null,
+        "meaningfulDirectionsMean": null,
+        "activeVisibleKindsMean": null,
+        "meaningfulKindsMean": null,
+        "positionsWith2MeaningfulKinds": 0,
+        "shareWith2MeaningfulKinds": null,
+        "selfLoops": 0,
+        "strictReverseCycles": 0
+      },
+      "late": {
+        "positions": 0,
+        "rawLegalActionsMean": null,
+        "meaningfulMovesMean": null,
+        "meaningfulDirectionsMean": null,
+        "activeVisibleKindsMean": null,
+        "meaningfulKindsMean": null,
+        "positionsWith2MeaningfulKinds": 0,
+        "shareWith2MeaningfulKinds": null,
+        "selfLoops": 0,
+        "strictReverseCycles": 0
+      }
+    },
+    {
+      "difficulty": 2,
+      "strategy": "space-first",
+      "games": 4,
+      "outcomes": {
+        "POLICY_EXHAUSTED": 3,
+        "ACTION_LIMIT": 1
+      },
+      "maxRunMean": 4,
+      "maxRunRange": [
+        3,
+        7
+      ],
+      "adjacentMean": 0.36737908791684537,
+      "rolling12Mean": 4.650184086706577,
+      "singlesMean": 86.5,
+      "groupsMean": 16.75,
+      "meaningfulGroupsMean": 4.25,
+      "early": {
+        "positions": 413,
+        "rawLegalActionsMean": 19.818401937046005,
+        "meaningfulMovesMean": 2.314769975786925,
+        "meaningfulDirectionsMean": 2.314769975786925,
+        "activeVisibleKindsMean": 7.6658595641646485,
+        "meaningfulKindsMean": 1.2929782082324455,
+        "positionsWith2MeaningfulKinds": 72,
+        "shareWith2MeaningfulKinds": 0.17433414043583534,
+        "selfLoops": 170,
+        "strictReverseCycles": 437
+      },
+      "middle": {
+        "positions": 0,
+        "rawLegalActionsMean": null,
+        "meaningfulMovesMean": null,
+        "meaningfulDirectionsMean": null,
+        "activeVisibleKindsMean": null,
+        "meaningfulKindsMean": null,
+        "positionsWith2MeaningfulKinds": 0,
+        "shareWith2MeaningfulKinds": null,
+        "selfLoops": 0,
+        "strictReverseCycles": 0
+      },
+      "late": {
+        "positions": 0,
+        "rawLegalActionsMean": null,
+        "meaningfulMovesMean": null,
+        "meaningfulDirectionsMean": null,
+        "activeVisibleKindsMean": null,
+        "meaningfulKindsMean": null,
+        "positionsWith2MeaningfulKinds": 0,
+        "shareWith2MeaningfulKinds": null,
+        "selfLoops": 0,
+        "strictReverseCycles": 0
+      }
+    },
+    {
+      "difficulty": 2,
+      "strategy": "rotate-kinds",
+      "games": 4,
+      "outcomes": {
+        "POLICY_EXHAUSTED": 4
+      },
+      "maxRunMean": 1.25,
+      "maxRunRange": [
+        1,
+        2
+      ],
+      "adjacentMean": 0.029411764705882353,
+      "rolling12Mean": 6.225446428571429,
+      "singlesMean": 23.5,
+      "groupsMean": 5.25,
+      "meaningfulGroupsMean": 5.25,
+      "early": {
+        "positions": 115,
+        "rawLegalActionsMean": 9.104347826086956,
+        "meaningfulMovesMean": 4.469565217391304,
+        "meaningfulDirectionsMean": 4.469565217391304,
+        "activeVisibleKindsMean": 4.3826086956521735,
+        "meaningfulKindsMean": 2.8260869565217392,
+        "positionsWith2MeaningfulKinds": 70,
+        "shareWith2MeaningfulKinds": 0.6086956521739131,
+        "selfLoops": 29,
+        "strictReverseCycles": 51
+      },
+      "middle": {
+        "positions": 0,
+        "rawLegalActionsMean": null,
+        "meaningfulMovesMean": null,
+        "meaningfulDirectionsMean": null,
+        "activeVisibleKindsMean": null,
+        "meaningfulKindsMean": null,
+        "positionsWith2MeaningfulKinds": 0,
+        "shareWith2MeaningfulKinds": null,
+        "selfLoops": 0,
+        "strictReverseCycles": 0
+      },
+      "late": {
+        "positions": 0,
+        "rawLegalActionsMean": null,
+        "meaningfulMovesMean": null,
+        "meaningfulDirectionsMean": null,
+        "activeVisibleKindsMean": null,
+        "meaningfulKindsMean": null,
+        "positionsWith2MeaningfulKinds": 0,
+        "shareWith2MeaningfulKinds": null,
+        "selfLoops": 0,
+        "strictReverseCycles": 0
+      }
+    },
+    {
+      "difficulty": 3,
+      "strategy": "certificate",
+      "games": 4,
+      "outcomes": {
+        "WIN": 4
+      },
+      "maxRunMean": 3.5,
+      "maxRunRange": [
+        3,
+        4
+      ],
+      "adjacentMean": 0.21298148564434952,
+      "rolling12Mean": 6.01282598977642,
+      "singlesMean": 90,
+      "groupsMean": 35.5,
+      "meaningfulGroupsMean": 35.5,
+      "early": {
+        "positions": 142,
+        "rawLegalActionsMean": 22.8943661971831,
+        "meaningfulMovesMean": 9.908450704225352,
+        "meaningfulDirectionsMean": 9.908450704225352,
+        "activeVisibleKindsMean": 6.330985915492958,
+        "meaningfulKindsMean": 3.5,
+        "positionsWith2MeaningfulKinds": 91,
+        "shareWith2MeaningfulKinds": 0.6408450704225352,
+        "selfLoops": 108,
+        "strictReverseCycles": 92
+      },
+      "middle": {
+        "positions": 171,
+        "rawLegalActionsMean": 14.116959064327485,
+        "meaningfulMovesMean": 2.7719298245614037,
+        "meaningfulDirectionsMean": 2.7719298245614037,
+        "activeVisibleKindsMean": 4.538011695906433,
+        "meaningfulKindsMean": 1.608187134502924,
+        "positionsWith2MeaningfulKinds": 65,
+        "shareWith2MeaningfulKinds": 0.38011695906432746,
+        "selfLoops": 131,
+        "strictReverseCycles": 34
+      },
+      "late": {
+        "positions": 189,
+        "rawLegalActionsMean": 27.87830687830688,
+        "meaningfulMovesMean": 3.1693121693121693,
+        "meaningfulDirectionsMean": 3.1693121693121693,
+        "activeVisibleKindsMean": 5.544973544973545,
+        "meaningfulKindsMean": 1.6296296296296295,
+        "positionsWith2MeaningfulKinds": 84,
+        "shareWith2MeaningfulKinds": 0.4444444444444444,
+        "selfLoops": 328,
+        "strictReverseCycles": 73
+      }
+    },
+    {
+      "difficulty": 3,
+      "strategy": "information-first",
+      "games": 4,
+      "outcomes": {
+        "POLICY_EXHAUSTED": 4
+      },
+      "maxRunMean": 3.5,
+      "maxRunRange": [
+        3,
+        4
+      ],
+      "adjacentMean": 0.33578827888529383,
+      "rolling12Mean": 3.6800203634085213,
+      "singlesMean": 34.25,
+      "groupsMean": 10.5,
+      "meaningfulGroupsMean": 9.5,
+      "early": {
+        "positions": 170,
+        "rawLegalActionsMean": 20.58823529411765,
+        "meaningfulMovesMean": 5.3352941176470585,
+        "meaningfulDirectionsMean": 5.3352941176470585,
+        "activeVisibleKindsMean": 5.794117647058823,
+        "meaningfulKindsMean": 2.088235294117647,
+        "positionsWith2MeaningfulKinds": 56,
+        "shareWith2MeaningfulKinds": 0.32941176470588235,
+        "selfLoops": 84,
+        "strictReverseCycles": 109
+      },
+      "middle": {
+        "positions": 9,
+        "rawLegalActionsMean": 3.888888888888889,
+        "meaningfulMovesMean": 1.1111111111111112,
+        "meaningfulDirectionsMean": 1.1111111111111112,
+        "activeVisibleKindsMean": 1.7777777777777777,
+        "meaningfulKindsMean": 0.7777777777777778,
+        "positionsWith2MeaningfulKinds": 0,
+        "shareWith2MeaningfulKinds": 0,
+        "selfLoops": 0,
+        "strictReverseCycles": 0
+      },
+      "late": {
+        "positions": 0,
+        "rawLegalActionsMean": null,
+        "meaningfulMovesMean": null,
+        "meaningfulDirectionsMean": null,
+        "activeVisibleKindsMean": null,
+        "meaningfulKindsMean": null,
+        "positionsWith2MeaningfulKinds": 0,
+        "shareWith2MeaningfulKinds": null,
+        "selfLoops": 0,
+        "strictReverseCycles": 0
+      }
+    },
+    {
+      "difficulty": 3,
+      "strategy": "space-first",
+      "games": 4,
+      "outcomes": {
+        "ACTION_LIMIT": 2,
+        "POLICY_EXHAUSTED": 2
+      },
+      "maxRunMean": 7,
+      "maxRunRange": [
+        7,
+        7
+      ],
+      "adjacentMean": 0.338970491206516,
+      "rolling12Mean": 3.1921185563104593,
+      "singlesMean": 184.5,
+      "groupsMean": 40.25,
+      "meaningfulGroupsMean": 6,
+      "early": {
+        "positions": 888,
+        "rawLegalActionsMean": 29.847972972972972,
+        "meaningfulMovesMean": 1.8423423423423424,
+        "meaningfulDirectionsMean": 1.8423423423423424,
+        "activeVisibleKindsMean": 7.786036036036036,
+        "meaningfulKindsMean": 0.759009009009009,
+        "positionsWith2MeaningfulKinds": 72,
+        "shareWith2MeaningfulKinds": 0.08108108108108109,
+        "selfLoops": 768,
+        "strictReverseCycles": 1195
+      },
+      "middle": {
+        "positions": 11,
+        "rawLegalActionsMean": 3,
+        "meaningfulMovesMean": 0,
+        "meaningfulDirectionsMean": 0,
+        "activeVisibleKindsMean": 2,
+        "meaningfulKindsMean": 0,
+        "positionsWith2MeaningfulKinds": 0,
+        "shareWith2MeaningfulKinds": 0,
+        "selfLoops": 0,
+        "strictReverseCycles": 10
+      },
+      "late": {
+        "positions": 0,
+        "rawLegalActionsMean": null,
+        "meaningfulMovesMean": null,
+        "meaningfulDirectionsMean": null,
+        "activeVisibleKindsMean": null,
+        "meaningfulKindsMean": null,
+        "positionsWith2MeaningfulKinds": 0,
+        "shareWith2MeaningfulKinds": null,
+        "selfLoops": 0,
+        "strictReverseCycles": 0
+      }
+    },
+    {
+      "difficulty": 3,
+      "strategy": "rotate-kinds",
+      "games": 4,
+      "outcomes": {
+        "POLICY_EXHAUSTED": 3,
+        "ACTION_LIMIT": 1
+      },
+      "maxRunMean": 3,
+      "maxRunRange": [
+        3,
+        3
+      ],
+      "adjacentMean": 0.12298123871013897,
+      "rolling12Mean": 5.653400484014048,
+      "singlesMean": 86,
+      "groupsMean": 16.25,
+      "meaningfulGroupsMean": 16.25,
+      "early": {
+        "positions": 139,
+        "rawLegalActionsMean": 12.899280575539569,
+        "meaningfulMovesMean": 6.575539568345324,
+        "meaningfulDirectionsMean": 6.575539568345324,
+        "activeVisibleKindsMean": 4.9784172661870505,
+        "meaningfulKindsMean": 3.3741007194244603,
+        "positionsWith2MeaningfulKinds": 96,
+        "shareWith2MeaningfulKinds": 0.6906474820143885,
+        "selfLoops": 104,
+        "strictReverseCycles": 32
+      },
+      "middle": {
+        "positions": 270,
+        "rawLegalActionsMean": 23.174074074074074,
+        "meaningfulMovesMean": 0.7481481481481481,
+        "meaningfulDirectionsMean": 0.7481481481481481,
+        "activeVisibleKindsMean": 7.514814814814815,
+        "meaningfulKindsMean": 0.6222222222222222,
+        "positionsWith2MeaningfulKinds": 11,
+        "shareWith2MeaningfulKinds": 0.040740740740740744,
+        "selfLoops": 380,
+        "strictReverseCycles": 415
+      },
+      "late": {
+        "positions": 0,
+        "rawLegalActionsMean": null,
+        "meaningfulMovesMean": null,
+        "meaningfulDirectionsMean": null,
+        "activeVisibleKindsMean": null,
+        "meaningfulKindsMean": null,
+        "positionsWith2MeaningfulKinds": 0,
+        "shareWith2MeaningfulKinds": null,
+        "selfLoops": 0,
+        "strictReverseCycles": 0
+      }
+    },
+    {
+      "difficulty": 4,
+      "strategy": "certificate",
+      "games": 5,
+      "outcomes": {
+        "WIN": 5
+      },
+      "maxRunMean": 4.6,
+      "maxRunRange": [
+        3,
+        5
+      ],
+      "adjacentMean": 0.3202439643847613,
+      "rolling12Mean": 5.4386573317351345,
+      "singlesMean": 94,
+      "groupsMean": 35,
+      "meaningfulGroupsMean": 35,
+      "early": {
+        "positions": 175,
+        "rawLegalActionsMean": 29.074285714285715,
+        "meaningfulMovesMean": 12.954285714285714,
+        "meaningfulDirectionsMean": 12.954285714285714,
+        "activeVisibleKindsMean": 6.365714285714286,
+        "meaningfulKindsMean": 3.5142857142857142,
+        "positionsWith2MeaningfulKinds": 105,
+        "shareWith2MeaningfulKinds": 0.6,
+        "selfLoops": 230,
+        "strictReverseCycles": 145
+      },
+      "middle": {
+        "positions": 231,
+        "rawLegalActionsMean": 17.926406926406926,
+        "meaningfulMovesMean": 3.7142857142857144,
+        "meaningfulDirectionsMean": 3.7142857142857144,
+        "activeVisibleKindsMean": 4.619047619047619,
+        "meaningfulKindsMean": 1.922077922077922,
+        "positionsWith2MeaningfulKinds": 94,
+        "shareWith2MeaningfulKinds": 0.4069264069264069,
+        "selfLoops": 233,
+        "strictReverseCycles": 70
+      },
+      "late": {
+        "positions": 239,
+        "rawLegalActionsMean": 31.301255230125523,
+        "meaningfulMovesMean": 3.401673640167364,
+        "meaningfulDirectionsMean": 3.401673640167364,
+        "activeVisibleKindsMean": 6.698744769874477,
+        "meaningfulKindsMean": 1.5439330543933054,
+        "positionsWith2MeaningfulKinds": 87,
+        "shareWith2MeaningfulKinds": 0.36401673640167365,
+        "selfLoops": 656,
+        "strictReverseCycles": 115
+      }
+    },
+    {
+      "difficulty": 4,
+      "strategy": "information-first",
+      "games": 5,
+      "outcomes": {
+        "POLICY_EXHAUSTED": 4,
+        "ACTION_LIMIT": 1
+      },
+      "maxRunMean": 7.8,
+      "maxRunRange": [
+        4,
+        20
+      ],
+      "adjacentMean": 0.4218827705982333,
+      "rolling12Mean": 3.43266291810842,
+      "singlesMean": 80,
+      "groupsMean": 14.4,
+      "meaningfulGroupsMean": 5,
+      "early": {
+        "positions": 237,
+        "rawLegalActionsMean": 29.27848101265823,
+        "meaningfulMovesMean": 6.341772151898734,
+        "meaningfulDirectionsMean": 6.341772151898734,
+        "activeVisibleKindsMean": 6.430379746835443,
+        "meaningfulKindsMean": 1.9451476793248945,
+        "positionsWith2MeaningfulKinds": 66,
+        "shareWith2MeaningfulKinds": 0.27848101265822783,
+        "selfLoops": 231,
+        "strictReverseCycles": 200
+      },
+      "middle": {
+        "positions": 235,
+        "rawLegalActionsMean": 37.225531914893615,
+        "meaningfulMovesMean": 0.5361702127659574,
+        "meaningfulDirectionsMean": 0.5361702127659574,
+        "activeVisibleKindsMean": 7.740425531914894,
+        "meaningfulKindsMean": 0.4297872340425532,
+        "positionsWith2MeaningfulKinds": 0,
+        "shareWith2MeaningfulKinds": 0,
+        "selfLoops": 413,
+        "strictReverseCycles": 452
+      },
+      "late": {
+        "positions": 0,
+        "rawLegalActionsMean": null,
+        "meaningfulMovesMean": null,
+        "meaningfulDirectionsMean": null,
+        "activeVisibleKindsMean": null,
+        "meaningfulKindsMean": null,
+        "positionsWith2MeaningfulKinds": 0,
+        "shareWith2MeaningfulKinds": null,
+        "selfLoops": 0,
+        "strictReverseCycles": 0
+      }
+    },
+    {
+      "difficulty": 4,
+      "strategy": "space-first",
+      "games": 5,
+      "outcomes": {
+        "ACTION_LIMIT": 5
+      },
+      "maxRunMean": 7,
+      "maxRunRange": [
+        7,
+        7
+      ],
+      "adjacentMean": 0.3210702341137124,
+      "rolling12Mean": 2.916955017301038,
+      "singlesMean": 249,
+      "groupsMean": 51,
+      "meaningfulGroupsMean": 2,
+      "early": {
+        "positions": 1500,
+        "rawLegalActionsMean": 41.08,
+        "meaningfulMovesMean": 1.9,
+        "meaningfulDirectionsMean": 1.9,
+        "activeVisibleKindsMean": 8,
+        "meaningfulKindsMean": 0.6433333333333333,
+        "positionsWith2MeaningfulKinds": 90,
+        "shareWith2MeaningfulKinds": 0.06,
+        "selfLoops": 2190,
+        "strictReverseCycles": 2505
+      },
+      "middle": {
+        "positions": 0,
+        "rawLegalActionsMean": null,
+        "meaningfulMovesMean": null,
+        "meaningfulDirectionsMean": null,
+        "activeVisibleKindsMean": null,
+        "meaningfulKindsMean": null,
+        "positionsWith2MeaningfulKinds": 0,
+        "shareWith2MeaningfulKinds": null,
+        "selfLoops": 0,
+        "strictReverseCycles": 0
+      },
+      "late": {
+        "positions": 0,
+        "rawLegalActionsMean": null,
+        "meaningfulMovesMean": null,
+        "meaningfulDirectionsMean": null,
+        "activeVisibleKindsMean": null,
+        "meaningfulKindsMean": null,
+        "positionsWith2MeaningfulKinds": 0,
+        "shareWith2MeaningfulKinds": null,
+        "selfLoops": 0,
+        "strictReverseCycles": 0
+      }
+    },
+    {
+      "difficulty": 4,
+      "strategy": "rotate-kinds",
+      "games": 5,
+      "outcomes": {
+        "POLICY_EXHAUSTED": 5
+      },
+      "maxRunMean": 3,
+      "maxRunRange": [
+        2,
+        4
+      ],
+      "adjacentMean": 0.19733739506853518,
+      "rolling12Mean": 4.846080681411925,
+      "singlesMean": 33.2,
+      "groupsMean": 15.4,
+      "meaningfulGroupsMean": 13.8,
+      "early": {
+        "positions": 182,
+        "rawLegalActionsMean": 17.675824175824175,
+        "meaningfulMovesMean": 8.76923076923077,
+        "meaningfulDirectionsMean": 8.76923076923077,
+        "activeVisibleKindsMean": 5.93956043956044,
+        "meaningfulKindsMean": 3.7967032967032965,
+        "positionsWith2MeaningfulKinds": 155,
+        "shareWith2MeaningfulKinds": 0.8516483516483516,
+        "selfLoops": 285,
+        "strictReverseCycles": 55
+      },
+      "middle": {
+        "positions": 61,
+        "rawLegalActionsMean": 11.19672131147541,
+        "meaningfulMovesMean": 1.278688524590164,
+        "meaningfulDirectionsMean": 1.278688524590164,
+        "activeVisibleKindsMean": 3.3278688524590163,
+        "meaningfulKindsMean": 0.5245901639344263,
+        "positionsWith2MeaningfulKinds": 0,
+        "shareWith2MeaningfulKinds": 0,
+        "selfLoops": 40,
+        "strictReverseCycles": 45
+      },
+      "late": {
+        "positions": 0,
+        "rawLegalActionsMean": null,
+        "meaningfulMovesMean": null,
+        "meaningfulDirectionsMean": null,
+        "activeVisibleKindsMean": null,
+        "meaningfulKindsMean": null,
+        "positionsWith2MeaningfulKinds": 0,
+        "shareWith2MeaningfulKinds": null,
+        "selfLoops": 0,
+        "strictReverseCycles": 0
+      }
+    }
+  ],
+  "pairedV05": [
+    {
+      "difficulty": 1,
+      "strategy": "certificate",
+      "games": 5,
+      "outcomes": {
+        "WIN": 5
+      },
+      "maxRunMean": 11,
+      "maxRunRange": [
+        11,
+        11
+      ],
+      "adjacentMean": 0.8343149356374535,
+      "rolling12Mean": 2.7399484536082475,
+      "singlesMean": 92.4,
+      "groupsMean": 14.8,
+      "meaningfulGroupsMean": 14.8,
+      "early": {
+        "positions": 135,
+        "rawLegalActionsMean": 5.014814814814815,
+        "meaningfulMovesMean": 2.2962962962962963,
+        "meaningfulDirectionsMean": 2.2962962962962963,
+        "activeVisibleKindsMean": 1.8888888888888888,
+        "meaningfulKindsMean": 1.8888888888888888,
+        "positionsWith2MeaningfulKinds": 15,
+        "shareWith2MeaningfulKinds": 0.1111111111111111,
+        "selfLoops": 0,
+        "strictReverseCycles": 0
+      },
+      "middle": {
+        "positions": 191,
+        "rawLegalActionsMean": 10.198952879581151,
+        "meaningfulMovesMean": 1.7643979057591623,
+        "meaningfulDirectionsMean": 1.7643979057591623,
+        "activeVisibleKindsMean": 3.0523560209424083,
+        "meaningfulKindsMean": 1.4450261780104712,
+        "positionsWith2MeaningfulKinds": 49,
+        "shareWith2MeaningfulKinds": 0.25654450261780104,
+        "selfLoops": 6,
+        "strictReverseCycles": 11
+      },
+      "late": {
+        "positions": 210,
+        "rawLegalActionsMean": 30.457142857142856,
+        "meaningfulMovesMean": 3.0952380952380953,
+        "meaningfulDirectionsMean": 3.0952380952380953,
+        "activeVisibleKindsMean": 9,
+        "meaningfulKindsMean": 1.3666666666666667,
+        "positionsWith2MeaningfulKinds": 27,
+        "shareWith2MeaningfulKinds": 0.12857142857142856,
+        "selfLoops": 200,
+        "strictReverseCycles": 60
+      }
+    },
+    {
+      "difficulty": 1,
+      "strategy": "information-first",
+      "games": 5,
+      "outcomes": {
+        "WIN": 4,
+        "POLICY_EXHAUSTED": 1
+      },
+      "maxRunMean": 15.2,
+      "maxRunRange": [
+        10,
+        33
+      ],
+      "adjacentMean": 0.7970174167356945,
+      "rolling12Mean": 2.9183351538503257,
+      "singlesMean": 66.6,
+      "groupsMean": 31.6,
+      "meaningfulGroupsMean": 27,
+      "early": {
+        "positions": 176,
+        "rawLegalActionsMean": 6.079545454545454,
+        "meaningfulMovesMean": 2.4886363636363638,
+        "meaningfulDirectionsMean": 2.4886363636363638,
+        "activeVisibleKindsMean": 2.8068181818181817,
+        "meaningfulKindsMean": 2.1193181818181817,
+        "positionsWith2MeaningfulKinds": 37,
+        "shareWith2MeaningfulKinds": 0.21022727272727273,
+        "selfLoops": 0,
+        "strictReverseCycles": 49
+      },
+      "middle": {
+        "positions": 144,
+        "rawLegalActionsMean": 6.25,
+        "meaningfulMovesMean": 1.3333333333333333,
+        "meaningfulDirectionsMean": 1.3333333333333333,
+        "activeVisibleKindsMean": 1,
+        "meaningfulKindsMean": 1,
+        "positionsWith2MeaningfulKinds": 0,
+        "shareWith2MeaningfulKinds": 0,
+        "selfLoops": 0,
+        "strictReverseCycles": 0
+      },
+      "late": {
+        "positions": 171,
+        "rawLegalActionsMean": 21.43859649122807,
+        "meaningfulMovesMean": 3.0584795321637426,
+        "meaningfulDirectionsMean": 3.0584795321637426,
+        "activeVisibleKindsMean": 2.5146198830409356,
+        "meaningfulKindsMean": 1.7076023391812865,
+        "positionsWith2MeaningfulKinds": 66,
+        "shareWith2MeaningfulKinds": 0.38596491228070173,
+        "selfLoops": 169,
+        "strictReverseCycles": 54
+      }
+    },
+    {
+      "difficulty": 1,
+      "strategy": "space-first",
+      "games": 5,
+      "outcomes": {
+        "WIN": 4,
+        "POLICY_EXHAUSTED": 1
+      },
+      "maxRunMean": 21.4,
+      "maxRunRange": [
+        18,
+        33
+      ],
+      "adjacentMean": 0.8112255233096294,
+      "rolling12Mean": 2.826821080010612,
+      "singlesMean": 47.2,
+      "groupsMean": 77,
+      "meaningfulGroupsMean": 72,
+      "early": {
+        "positions": 190,
+        "rawLegalActionsMean": 6.494736842105263,
+        "meaningfulMovesMean": 2.4894736842105263,
+        "meaningfulDirectionsMean": 2.4894736842105263,
+        "activeVisibleKindsMean": 3.3157894736842106,
+        "meaningfulKindsMean": 2.1526315789473682,
+        "positionsWith2MeaningfulKinds": 45,
+        "shareWith2MeaningfulKinds": 0.23684210526315788,
+        "selfLoops": 0,
+        "strictReverseCycles": 63
+      },
+      "middle": {
+        "positions": 152,
+        "rawLegalActionsMean": 9.835526315789474,
+        "meaningfulMovesMean": 1.5855263157894737,
+        "meaningfulDirectionsMean": 1.5855263157894737,
+        "activeVisibleKindsMean": 2.736842105263158,
+        "meaningfulKindsMean": 1.230263157894737,
+        "positionsWith2MeaningfulKinds": 12,
+        "shareWith2MeaningfulKinds": 0.07894736842105263,
+        "selfLoops": 5,
+        "strictReverseCycles": 8
+      },
+      "late": {
+        "positions": 279,
+        "rawLegalActionsMean": 57.939068100358426,
+        "meaningfulMovesMean": 2.838709677419355,
+        "meaningfulDirectionsMean": 2.838709677419355,
+        "activeVisibleKindsMean": 9,
+        "meaningfulKindsMean": 1.82078853046595,
+        "positionsWith2MeaningfulKinds": 99,
+        "shareWith2MeaningfulKinds": 0.3548387096774194,
+        "selfLoops": 879,
+        "strictReverseCycles": 158
+      }
+    },
+    {
+      "difficulty": 1,
+      "strategy": "rotate-kinds",
+      "games": 5,
+      "outcomes": {
+        "WIN": 4,
+        "POLICY_EXHAUSTED": 1
+      },
+      "maxRunMean": 14.4,
+      "maxRunRange": [
+        10,
+        31
+      ],
+      "adjacentMean": 0.7358734841035727,
+      "rolling12Mean": 3.2115120364120933,
+      "singlesMean": 66,
+      "groupsMean": 35.6,
+      "meaningfulGroupsMean": 31,
+      "early": {
+        "positions": 193,
+        "rawLegalActionsMean": 6.269430051813472,
+        "meaningfulMovesMean": 2.3419689119170983,
+        "meaningfulDirectionsMean": 2.3419689119170983,
+        "activeVisibleKindsMean": 3.1036269430051813,
+        "meaningfulKindsMean": 1.9585492227979275,
+        "positionsWith2MeaningfulKinds": 59,
+        "shareWith2MeaningfulKinds": 0.30569948186528495,
+        "selfLoops": 0,
+        "strictReverseCycles": 65
+      },
+      "middle": {
+        "positions": 144,
+        "rawLegalActionsMean": 6.333333333333333,
+        "meaningfulMovesMean": 1.3819444444444444,
+        "meaningfulDirectionsMean": 1.3819444444444444,
+        "activeVisibleKindsMean": 1,
+        "meaningfulKindsMean": 1,
+        "positionsWith2MeaningfulKinds": 0,
+        "shareWith2MeaningfulKinds": 0,
+        "selfLoops": 0,
+        "strictReverseCycles": 0
+      },
+      "late": {
+        "positions": 171,
+        "rawLegalActionsMean": 24.894736842105264,
+        "meaningfulMovesMean": 3.181286549707602,
+        "meaningfulDirectionsMean": 3.181286549707602,
+        "activeVisibleKindsMean": 5.233918128654971,
+        "meaningfulKindsMean": 1.5380116959064327,
+        "positionsWith2MeaningfulKinds": 47,
+        "shareWith2MeaningfulKinds": 0.27485380116959063,
+        "selfLoops": 147,
+        "strictReverseCycles": 50
+      }
+    },
+    {
+      "difficulty": 2,
+      "strategy": "certificate",
+      "games": 4,
+      "outcomes": {
+        "WIN": 4
+      },
+      "maxRunMean": 11,
+      "maxRunRange": [
+        11,
+        11
+      ],
+      "adjacentMean": 0.8171437213600465,
+      "rolling12Mean": 2.8005927144366023,
+      "singlesMean": 94.25,
+      "groupsMean": 14.75,
+      "meaningfulGroupsMean": 14.75,
+      "early": {
+        "positions": 112,
+        "rawLegalActionsMean": 7.696428571428571,
+        "meaningfulMovesMean": 4.5,
+        "meaningfulDirectionsMean": 4.5,
+        "activeVisibleKindsMean": 2.7142857142857144,
+        "meaningfulKindsMean": 2.642857142857143,
+        "positionsWith2MeaningfulKinds": 24,
+        "shareWith2MeaningfulKinds": 0.21428571428571427,
+        "selfLoops": 8,
+        "strictReverseCycles": 8
+      },
+      "middle": {
+        "positions": 160,
+        "rawLegalActionsMean": 15.75,
+        "meaningfulMovesMean": 3.11875,
+        "meaningfulDirectionsMean": 3.11875,
+        "activeVisibleKindsMean": 4.7,
+        "meaningfulKindsMean": 1.85,
+        "positionsWith2MeaningfulKinds": 74,
+        "shareWith2MeaningfulKinds": 0.4625,
+        "selfLoops": 23,
+        "strictReverseCycles": 21
+      },
+      "late": {
+        "positions": 164,
+        "rawLegalActionsMean": 38.48780487804878,
+        "meaningfulMovesMean": 4.067073170731708,
+        "meaningfulDirectionsMean": 4.067073170731708,
+        "activeVisibleKindsMean": 9,
+        "meaningfulKindsMean": 1.3841463414634145,
+        "positionsWith2MeaningfulKinds": 39,
+        "shareWith2MeaningfulKinds": 0.23780487804878048,
+        "selfLoops": 144,
+        "strictReverseCycles": 40
+      }
+    },
+    {
+      "difficulty": 2,
+      "strategy": "information-first",
+      "games": 4,
+      "outcomes": {
+        "POLICY_EXHAUSTED": 4
+      },
+      "maxRunMean": 4,
+      "maxRunRange": [
+        4,
+        4
+      ],
+      "adjacentMean": 0.25,
+      "rolling12Mean": 3.895161290322581,
+      "singlesMean": 71,
+      "groupsMean": 2,
+      "meaningfulGroupsMean": 2,
+      "early": {
+        "positions": 292,
+        "rawLegalActionsMean": 13.643835616438356,
+        "meaningfulMovesMean": 2.191780821917808,
+        "meaningfulDirectionsMean": 2.191780821917808,
+        "activeVisibleKindsMean": 7.383561643835616,
+        "meaningfulKindsMean": 1.6575342465753424,
+        "positionsWith2MeaningfulKinds": 84,
+        "shareWith2MeaningfulKinds": 0.2876712328767123,
+        "selfLoops": 144,
+        "strictReverseCycles": 288
+      },
+      "middle": {
+        "positions": 0,
+        "rawLegalActionsMean": null,
+        "meaningfulMovesMean": null,
+        "meaningfulDirectionsMean": null,
+        "activeVisibleKindsMean": null,
+        "meaningfulKindsMean": null,
+        "positionsWith2MeaningfulKinds": 0,
+        "shareWith2MeaningfulKinds": null,
+        "selfLoops": 0,
+        "strictReverseCycles": 0
+      },
+      "late": {
+        "positions": 0,
+        "rawLegalActionsMean": null,
+        "meaningfulMovesMean": null,
+        "meaningfulDirectionsMean": null,
+        "activeVisibleKindsMean": null,
+        "meaningfulKindsMean": null,
+        "positionsWith2MeaningfulKinds": 0,
+        "shareWith2MeaningfulKinds": null,
+        "selfLoops": 0,
+        "strictReverseCycles": 0
+      }
+    },
+    {
+      "difficulty": 2,
+      "strategy": "space-first",
+      "games": 4,
+      "outcomes": {
+        "POLICY_EXHAUSTED": 4
+      },
+      "maxRunMean": 4,
+      "maxRunRange": [
+        4,
+        4
+      ],
+      "adjacentMean": 0.26136363636363635,
+      "rolling12Mean": 3.423076923076923,
+      "singlesMean": 87,
+      "groupsMean": 2,
+      "meaningfulGroupsMean": 1,
+      "early": {
+        "positions": 356,
+        "rawLegalActionsMean": 15.932584269662922,
+        "meaningfulMovesMean": 2.5168539325842696,
+        "meaningfulDirectionsMean": 2.5168539325842696,
+        "activeVisibleKindsMean": 8.146067415730338,
+        "meaningfulKindsMean": 1.550561797752809,
+        "positionsWith2MeaningfulKinds": 72,
+        "shareWith2MeaningfulKinds": 0.20224719101123595,
+        "selfLoops": 172,
+        "strictReverseCycles": 404
+      },
+      "middle": {
+        "positions": 0,
+        "rawLegalActionsMean": null,
+        "meaningfulMovesMean": null,
+        "meaningfulDirectionsMean": null,
+        "activeVisibleKindsMean": null,
+        "meaningfulKindsMean": null,
+        "positionsWith2MeaningfulKinds": 0,
+        "shareWith2MeaningfulKinds": null,
+        "selfLoops": 0,
+        "strictReverseCycles": 0
+      },
+      "late": {
+        "positions": 0,
+        "rawLegalActionsMean": null,
+        "meaningfulMovesMean": null,
+        "meaningfulDirectionsMean": null,
+        "activeVisibleKindsMean": null,
+        "meaningfulKindsMean": null,
+        "positionsWith2MeaningfulKinds": 0,
+        "shareWith2MeaningfulKinds": null,
+        "selfLoops": 0,
+        "strictReverseCycles": 0
+      }
+    },
+    {
+      "difficulty": 2,
+      "strategy": "rotate-kinds",
+      "games": 4,
+      "outcomes": {
+        "WIN": 2,
+        "POLICY_EXHAUSTED": 2
+      },
+      "maxRunMean": 26.25,
+      "maxRunRange": [
+        10,
+        45
+      ],
+      "adjacentMean": 0.6731312794355547,
+      "rolling12Mean": 3.0630181222286486,
+      "singlesMean": 51.75,
+      "groupsMean": 41.25,
+      "meaningfulGroupsMean": 24.75,
+      "early": {
+        "positions": 212,
+        "rawLegalActionsMean": 7.693396226415095,
+        "meaningfulMovesMean": 2.6273584905660377,
+        "meaningfulDirectionsMean": 2.6273584905660377,
+        "activeVisibleKindsMean": 3.009433962264151,
+        "meaningfulKindsMean": 1.8066037735849056,
+        "positionsWith2MeaningfulKinds": 78,
+        "shareWith2MeaningfulKinds": 0.36792452830188677,
+        "selfLoops": 38,
+        "strictReverseCycles": 107
+      },
+      "middle": {
+        "positions": 74,
+        "rawLegalActionsMean": 8.41891891891892,
+        "meaningfulMovesMean": 1.7297297297297298,
+        "meaningfulDirectionsMean": 1.7297297297297298,
+        "activeVisibleKindsMean": 1.2162162162162162,
+        "meaningfulKindsMean": 1.162162162162162,
+        "positionsWith2MeaningfulKinds": 2,
+        "shareWith2MeaningfulKinds": 0.02702702702702703,
+        "selfLoops": 6,
+        "strictReverseCycles": 4
+      },
+      "late": {
+        "positions": 86,
+        "rawLegalActionsMean": 21.11627906976744,
+        "meaningfulMovesMean": 3.36046511627907,
+        "meaningfulDirectionsMean": 3.36046511627907,
+        "activeVisibleKindsMean": 3.2209302325581395,
+        "meaningfulKindsMean": 1.5348837209302326,
+        "positionsWith2MeaningfulKinds": 26,
+        "shareWith2MeaningfulKinds": 0.3023255813953488,
+        "selfLoops": 65,
+        "strictReverseCycles": 26
+      }
+    },
+    {
+      "difficulty": 3,
+      "strategy": "certificate",
+      "games": 4,
+      "outcomes": {
+        "WIN": 4
+      },
+      "maxRunMean": 10,
+      "maxRunRange": [
+        10,
+        10
+      ],
+      "adjacentMean": 0.7759597276546429,
+      "rolling12Mean": 3.2813032977752608,
+      "singlesMean": 103.75,
+      "groupsMean": 15.5,
+      "meaningfulGroupsMean": 15.5,
+      "early": {
+        "positions": 152,
+        "rawLegalActionsMean": 20.769736842105264,
+        "meaningfulMovesMean": 8.953947368421053,
+        "meaningfulDirectionsMean": 8.953947368421053,
+        "activeVisibleKindsMean": 6.684210526315789,
+        "meaningfulKindsMean": 3.473684210526316,
+        "positionsWith2MeaningfulKinds": 76,
+        "shareWith2MeaningfulKinds": 0.5,
+        "selfLoops": 120,
+        "strictReverseCycles": 120
+      },
+      "middle": {
+        "positions": 164,
+        "rawLegalActionsMean": 18.859756097560975,
+        "meaningfulMovesMean": 2.4390243902439024,
+        "meaningfulDirectionsMean": 2.4390243902439024,
+        "activeVisibleKindsMean": 4.317073170731708,
+        "meaningfulKindsMean": 1.2378048780487805,
+        "positionsWith2MeaningfulKinds": 6,
+        "shareWith2MeaningfulKinds": 0.036585365853658534,
+        "selfLoops": 34,
+        "strictReverseCycles": 37
+      },
+      "late": {
+        "positions": 161,
+        "rawLegalActionsMean": 46.43478260869565,
+        "meaningfulMovesMean": 4.453416149068323,
+        "meaningfulDirectionsMean": 4.453416149068323,
+        "activeVisibleKindsMean": 9,
+        "meaningfulKindsMean": 1.1677018633540373,
+        "positionsWith2MeaningfulKinds": 12,
+        "shareWith2MeaningfulKinds": 0.07453416149068323,
+        "selfLoops": 124,
+        "strictReverseCycles": 34
+      }
+    },
+    {
+      "difficulty": 3,
+      "strategy": "information-first",
+      "games": 4,
+      "outcomes": {
+        "WIN": 2,
+        "ACTION_LIMIT": 1,
+        "POLICY_EXHAUSTED": 1
+      },
+      "maxRunMean": 27.5,
+      "maxRunRange": [
+        10,
+        80
+      ],
+      "adjacentMean": 0.5576399583573888,
+      "rolling12Mean": 3.1040261925258115,
+      "singlesMean": 150,
+      "groupsMean": 46.25,
+      "meaningfulGroupsMean": 29,
+      "early": {
+        "positions": 479,
+        "rawLegalActionsMean": 22.12526096033403,
+        "meaningfulMovesMean": 2.277661795407098,
+        "meaningfulDirectionsMean": 2.277661795407098,
+        "activeVisibleKindsMean": 7.8997912317327765,
+        "meaningfulKindsMean": 1.2860125260960333,
+        "positionsWith2MeaningfulKinds": 88,
+        "shareWith2MeaningfulKinds": 0.1837160751565762,
+        "selfLoops": 560,
+        "strictReverseCycles": 586
+      },
+      "middle": {
+        "positions": 200,
+        "rawLegalActionsMean": 10.145,
+        "meaningfulMovesMean": 1.15,
+        "meaningfulDirectionsMean": 1.15,
+        "activeVisibleKindsMean": 1.24,
+        "meaningfulKindsMean": 0.775,
+        "positionsWith2MeaningfulKinds": 6,
+        "shareWith2MeaningfulKinds": 0.03,
+        "selfLoops": 92,
+        "strictReverseCycles": 155
+      },
+      "late": {
+        "positions": 106,
+        "rawLegalActionsMean": 19.141509433962263,
+        "meaningfulMovesMean": 3.811320754716981,
+        "meaningfulDirectionsMean": 3.811320754716981,
+        "activeVisibleKindsMean": 2.3962264150943398,
+        "meaningfulKindsMean": 1.650943396226415,
+        "positionsWith2MeaningfulKinds": 64,
+        "shareWith2MeaningfulKinds": 0.6037735849056604,
+        "selfLoops": 97,
+        "strictReverseCycles": 19
+      }
+    },
+    {
+      "difficulty": 3,
+      "strategy": "space-first",
+      "games": 4,
+      "outcomes": {
+        "ACTION_LIMIT": 4
+      },
+      "maxRunMean": 6.5,
+      "maxRunRange": [
+        5,
+        7
+      ],
+      "adjacentMean": 0.20234113712374582,
+      "rolling12Mean": 2.9792387543252596,
+      "singlesMean": 275.75,
+      "groupsMean": 24.25,
+      "meaningfulGroupsMean": 1,
+      "early": {
+        "positions": 1200,
+        "rawLegalActionsMean": 25.663333333333334,
+        "meaningfulMovesMean": 1.5658333333333334,
+        "meaningfulDirectionsMean": 1.5658333333333334,
+        "activeVisibleKindsMean": 8.919166666666667,
+        "meaningfulKindsMean": 0.8033333333333333,
+        "positionsWith2MeaningfulKinds": 73,
+        "shareWith2MeaningfulKinds": 0.060833333333333336,
+        "selfLoops": 1628,
+        "strictReverseCycles": 1860
+      },
+      "middle": {
+        "positions": 0,
+        "rawLegalActionsMean": null,
+        "meaningfulMovesMean": null,
+        "meaningfulDirectionsMean": null,
+        "activeVisibleKindsMean": null,
+        "meaningfulKindsMean": null,
+        "positionsWith2MeaningfulKinds": 0,
+        "shareWith2MeaningfulKinds": null,
+        "selfLoops": 0,
+        "strictReverseCycles": 0
+      },
+      "late": {
+        "positions": 0,
+        "rawLegalActionsMean": null,
+        "meaningfulMovesMean": null,
+        "meaningfulDirectionsMean": null,
+        "activeVisibleKindsMean": null,
+        "meaningfulKindsMean": null,
+        "positionsWith2MeaningfulKinds": 0,
+        "shareWith2MeaningfulKinds": null,
+        "selfLoops": 0,
+        "strictReverseCycles": 0
+      }
+    },
+    {
+      "difficulty": 3,
+      "strategy": "rotate-kinds",
+      "games": 4,
+      "outcomes": {
+        "WIN": 3,
+        "POLICY_EXHAUSTED": 1
+      },
+      "maxRunMean": 27.25,
+      "maxRunRange": [
+        10,
+        79
+      ],
+      "adjacentMean": 0.6793197151424288,
+      "rolling12Mean": 3.0813648615535407,
+      "singlesMean": 68.75,
+      "groupsMean": 48.75,
+      "meaningfulGroupsMean": 31.5,
+      "early": {
+        "positions": 144,
+        "rawLegalActionsMean": 10.284722222222221,
+        "meaningfulMovesMean": 5.638888888888889,
+        "meaningfulDirectionsMean": 5.638888888888889,
+        "activeVisibleKindsMean": 4.805555555555555,
+        "meaningfulKindsMean": 3.2569444444444446,
+        "positionsWith2MeaningfulKinds": 92,
+        "shareWith2MeaningfulKinds": 0.6388888888888888,
+        "selfLoops": 102,
+        "strictReverseCycles": 37
+      },
+      "middle": {
+        "positions": 198,
+        "rawLegalActionsMean": 9.747474747474747,
+        "meaningfulMovesMean": 1.1111111111111112,
+        "meaningfulDirectionsMean": 1.1111111111111112,
+        "activeVisibleKindsMean": 1.202020202020202,
+        "meaningfulKindsMean": 0.7575757575757576,
+        "positionsWith2MeaningfulKinds": 5,
+        "shareWith2MeaningfulKinds": 0.025252525252525252,
+        "selfLoops": 86,
+        "strictReverseCycles": 153
+      },
+      "late": {
+        "positions": 128,
+        "rawLegalActionsMean": 23.1484375,
+        "meaningfulMovesMean": 3.015625,
+        "meaningfulDirectionsMean": 3.015625,
+        "activeVisibleKindsMean": 2.3671875,
+        "meaningfulKindsMean": 1.265625,
+        "positionsWith2MeaningfulKinds": 25,
+        "shareWith2MeaningfulKinds": 0.1953125,
+        "selfLoops": 169,
+        "strictReverseCycles": 36
+      }
+    },
+    {
+      "difficulty": 4,
+      "strategy": "certificate",
+      "games": 5,
+      "outcomes": {
+        "WIN": 5
+      },
+      "maxRunMean": 9,
+      "maxRunRange": [
+        9,
+        9
+      ],
+      "adjacentMean": 0.7626802969020845,
+      "rolling12Mean": 3.4140602654654395,
+      "singlesMean": 135.6,
+      "groupsMean": 15.4,
+      "meaningfulGroupsMean": 15.4,
+      "early": {
+        "positions": 345,
+        "rawLegalActionsMean": 35.15942028985507,
+        "meaningfulMovesMean": 7.63768115942029,
+        "meaningfulDirectionsMean": 7.63768115942029,
+        "activeVisibleKindsMean": 8.884057971014492,
+        "meaningfulKindsMean": 2.2028985507246377,
+        "positionsWith2MeaningfulKinds": 95,
+        "shareWith2MeaningfulKinds": 0.2753623188405797,
+        "selfLoops": 775,
+        "strictReverseCycles": 600
+      },
+      "middle": {
+        "positions": 205,
+        "rawLegalActionsMean": 22.682926829268293,
+        "meaningfulMovesMean": 2.8146341463414632,
+        "meaningfulDirectionsMean": 2.8146341463414632,
+        "activeVisibleKindsMean": 4.434146341463415,
+        "meaningfulKindsMean": 1.1658536585365853,
+        "positionsWith2MeaningfulKinds": 5,
+        "shareWith2MeaningfulKinds": 0.024390243902439025,
+        "selfLoops": 62,
+        "strictReverseCycles": 55
+      },
+      "late": {
+        "positions": 205,
+        "rawLegalActionsMean": 57.35609756097561,
+        "meaningfulMovesMean": 5.2,
+        "meaningfulDirectionsMean": 5.2,
+        "activeVisibleKindsMean": 9,
+        "meaningfulKindsMean": 1.1853658536585365,
+        "positionsWith2MeaningfulKinds": 17,
+        "shareWith2MeaningfulKinds": 0.08292682926829269,
+        "selfLoops": 200,
+        "strictReverseCycles": 55
+      }
+    },
+    {
+      "difficulty": 4,
+      "strategy": "information-first",
+      "games": 5,
+      "outcomes": {
+        "WIN": 4,
+        "ACTION_LIMIT": 1
+      },
+      "maxRunMean": 9.6,
+      "maxRunRange": [
+        8,
+        10
+      ],
+      "adjacentMean": 0.46758066262460557,
+      "rolling12Mean": 3.3248087791996133,
+      "singlesMean": 183.4,
+      "groupsMean": 31.4,
+      "meaningfulGroupsMean": 31.4,
+      "early": {
+        "positions": 721,
+        "rawLegalActionsMean": 31.981969486823857,
+        "meaningfulMovesMean": 2.621359223300971,
+        "meaningfulDirectionsMean": 2.621359223300971,
+        "activeVisibleKindsMean": 8.317614424410541,
+        "meaningfulKindsMean": 1.1941747572815533,
+        "positionsWith2MeaningfulKinds": 115,
+        "shareWith2MeaningfulKinds": 0.15950069348127602,
+        "selfLoops": 1446,
+        "strictReverseCycles": 1114
+      },
+      "middle": {
+        "positions": 182,
+        "rawLegalActionsMean": 15.137362637362637,
+        "meaningfulMovesMean": 2.197802197802198,
+        "meaningfulDirectionsMean": 2.197802197802198,
+        "activeVisibleKindsMean": 2.659340659340659,
+        "meaningfulKindsMean": 1.2197802197802199,
+        "positionsWith2MeaningfulKinds": 15,
+        "shareWith2MeaningfulKinds": 0.08241758241758242,
+        "selfLoops": 102,
+        "strictReverseCycles": 71
+      },
+      "late": {
+        "positions": 171,
+        "rawLegalActionsMean": 25.964912280701753,
+        "meaningfulMovesMean": 4.730994152046784,
+        "meaningfulDirectionsMean": 4.730994152046784,
+        "activeVisibleKindsMean": 2.9941520467836256,
+        "meaningfulKindsMean": 1.8304093567251463,
+        "positionsWith2MeaningfulKinds": 132,
+        "shareWith2MeaningfulKinds": 0.7719298245614035,
+        "selfLoops": 261,
+        "strictReverseCycles": 51
+      }
+    },
+    {
+      "difficulty": 4,
+      "strategy": "space-first",
+      "games": 5,
+      "outcomes": {
+        "ACTION_LIMIT": 5
+      },
+      "maxRunMean": 7,
+      "maxRunRange": [
+        7,
+        7
+      ],
+      "adjacentMean": 0.19130434782608696,
+      "rolling12Mean": 3.0089965397923875,
+      "singlesMean": 288.4,
+      "groupsMean": 11.6,
+      "meaningfulGroupsMean": 1,
+      "early": {
+        "positions": 1500,
+        "rawLegalActionsMean": 36.476,
+        "meaningfulMovesMean": 1.9526666666666668,
+        "meaningfulDirectionsMean": 1.9526666666666668,
+        "activeVisibleKindsMean": 8.981333333333334,
+        "meaningfulKindsMean": 0.7813333333333333,
+        "positionsWith2MeaningfulKinds": 92,
+        "shareWith2MeaningfulKinds": 0.06133333333333333,
+        "selfLoops": 3267,
+        "strictReverseCycles": 2841
+      },
+      "middle": {
+        "positions": 0,
+        "rawLegalActionsMean": null,
+        "meaningfulMovesMean": null,
+        "meaningfulDirectionsMean": null,
+        "activeVisibleKindsMean": null,
+        "meaningfulKindsMean": null,
+        "positionsWith2MeaningfulKinds": 0,
+        "shareWith2MeaningfulKinds": null,
+        "selfLoops": 0,
+        "strictReverseCycles": 0
+      },
+      "late": {
+        "positions": 0,
+        "rawLegalActionsMean": null,
+        "meaningfulMovesMean": null,
+        "meaningfulDirectionsMean": null,
+        "activeVisibleKindsMean": null,
+        "meaningfulKindsMean": null,
+        "positionsWith2MeaningfulKinds": 0,
+        "shareWith2MeaningfulKinds": null,
+        "selfLoops": 0,
+        "strictReverseCycles": 0
+      }
+    },
+    {
+      "difficulty": 4,
+      "strategy": "rotate-kinds",
+      "games": 5,
+      "outcomes": {
+        "WIN": 4,
+        "POLICY_EXHAUSTED": 1
+      },
+      "maxRunMean": 17.8,
+      "maxRunRange": [
+        10,
+        49
+      ],
+      "adjacentMean": 0.6516459575283104,
+      "rolling12Mean": 3.297775049301209,
+      "singlesMean": 78.4,
+      "groupsMean": 44,
+      "meaningfulGroupsMean": 35.6,
+      "early": {
+        "positions": 185,
+        "rawLegalActionsMean": 14.702702702702704,
+        "meaningfulMovesMean": 7.518918918918919,
+        "meaningfulDirectionsMean": 7.518918918918919,
+        "activeVisibleKindsMean": 5.908108108108108,
+        "meaningfulKindsMean": 3.610810810810811,
+        "positionsWith2MeaningfulKinds": 126,
+        "shareWith2MeaningfulKinds": 0.6810810810810811,
+        "selfLoops": 281,
+        "strictReverseCycles": 59
+      },
+      "middle": {
+        "positions": 190,
+        "rawLegalActionsMean": 10.131578947368421,
+        "meaningfulMovesMean": 2.1210526315789475,
+        "meaningfulDirectionsMean": 2.1210526315789475,
+        "activeVisibleKindsMean": 1.4210526315789473,
+        "meaningfulKindsMean": 1.2736842105263158,
+        "positionsWith2MeaningfulKinds": 10,
+        "shareWith2MeaningfulKinds": 0.05263157894736842,
+        "selfLoops": 38,
+        "strictReverseCycles": 20
+      },
+      "late": {
+        "positions": 237,
+        "rawLegalActionsMean": 23.126582278481013,
+        "meaningfulMovesMean": 2.6033755274261603,
+        "meaningfulDirectionsMean": 2.6033755274261603,
+        "activeVisibleKindsMean": 2.970464135021097,
+        "meaningfulKindsMean": 1.0464135021097047,
+        "positionsWith2MeaningfulKinds": 42,
+        "shareWith2MeaningfulKinds": 0.17721518987341772,
+        "selfLoops": 315,
+        "strictReverseCycles": 110
+      }
+    }
+  ],
+  "rootPolicyOutcomes": [
+    {
+      "id": "policy-guided-r1-rotate-0",
+      "k": 1,
+      "strategy": "certificate",
+      "outcome": "WIN",
+      "moves": 110,
+      "groups": 64,
+      "maxRun": 3,
+      "rolling12": 6.585858585858586,
+      "stagesReached": [
+        "early",
+        "middle",
+        "late"
+      ]
+    },
+    {
+      "id": "policy-guided-r1-rotate-0",
+      "k": 1,
+      "strategy": "information-first",
+      "outcome": "WIN",
+      "moves": 110,
+      "groups": 85,
+      "maxRun": 3,
+      "rolling12": 7.515151515151516,
+      "stagesReached": [
+        "early",
+        "middle",
+        "late"
+      ]
+    },
+    {
+      "id": "policy-guided-r1-rotate-0",
+      "k": 1,
+      "strategy": "space-first",
+      "outcome": "WIN",
+      "moves": 115,
+      "groups": 88,
+      "maxRun": 3,
+      "rolling12": 7.4423076923076925,
+      "stagesReached": [
+        "early",
+        "middle",
+        "late"
+      ]
+    },
+    {
+      "id": "policy-guided-r1-rotate-0",
+      "k": 1,
+      "strategy": "rotate-kinds",
+      "outcome": "WIN",
+      "moves": 118,
+      "groups": 91,
+      "maxRun": 2,
+      "rolling12": 7.242990654205608,
+      "stagesReached": [
+        "early",
+        "middle",
+        "late"
+      ]
+    },
+    {
+      "id": "cross-r1-15",
+      "k": 1,
+      "strategy": "certificate",
+      "outcome": "WIN",
+      "moves": 110,
+      "groups": 51,
+      "maxRun": 3,
+      "rolling12": 6.848484848484849,
+      "stagesReached": [
+        "early",
+        "middle",
+        "late"
+      ]
+    },
+    {
+      "id": "cross-r1-15",
+      "k": 1,
+      "strategy": "information-first",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 16,
+      "groups": 2,
+      "maxRun": 2,
+      "rolling12": 5,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "cross-r1-15",
+      "k": 1,
+      "strategy": "space-first",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 16,
+      "groups": 2,
+      "maxRun": 2,
+      "rolling12": 5,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "cross-r1-15",
+      "k": 1,
+      "strategy": "rotate-kinds",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 18,
+      "groups": 2,
+      "maxRun": 1,
+      "rolling12": 4.142857142857143,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "cross-r1-15-swap-0",
+      "k": 1,
+      "strategy": "certificate",
+      "outcome": "WIN",
+      "moves": 110,
+      "groups": 51,
+      "maxRun": 3,
+      "rolling12": 6.828282828282828,
+      "stagesReached": [
+        "early",
+        "middle",
+        "late"
+      ]
+    },
+    {
+      "id": "cross-r1-15-swap-0",
+      "k": 1,
+      "strategy": "information-first",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 16,
+      "groups": 2,
+      "maxRun": 2,
+      "rolling12": 5,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "cross-r1-15-swap-0",
+      "k": 1,
+      "strategy": "space-first",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 16,
+      "groups": 2,
+      "maxRun": 2,
+      "rolling12": 5,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "cross-r1-15-swap-0",
+      "k": 1,
+      "strategy": "rotate-kinds",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 18,
+      "groups": 2,
+      "maxRun": 1,
+      "rolling12": 4.142857142857143,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "cross-r1-15-swap-1",
+      "k": 1,
+      "strategy": "certificate",
+      "outcome": "WIN",
+      "moves": 114,
+      "groups": 41,
+      "maxRun": 2,
+      "rolling12": 6.776699029126213,
+      "stagesReached": [
+        "early",
+        "middle",
+        "late"
+      ]
+    },
+    {
+      "id": "cross-r1-15-swap-1",
+      "k": 1,
+      "strategy": "information-first",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 16,
+      "groups": 2,
+      "maxRun": 2,
+      "rolling12": 5,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "cross-r1-15-swap-1",
+      "k": 1,
+      "strategy": "space-first",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 16,
+      "groups": 2,
+      "maxRun": 2,
+      "rolling12": 5,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "cross-r1-15-swap-1",
+      "k": 1,
+      "strategy": "rotate-kinds",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 18,
+      "groups": 2,
+      "maxRun": 1,
+      "rolling12": 4.142857142857143,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "cross-r1-15-swap-2",
+      "k": 1,
+      "strategy": "certificate",
+      "outcome": "WIN",
+      "moves": 109,
+      "groups": 43,
+      "maxRun": 2,
+      "rolling12": 6.683673469387755,
+      "stagesReached": [
+        "early",
+        "middle",
+        "late"
+      ]
+    },
+    {
+      "id": "cross-r1-15-swap-2",
+      "k": 1,
+      "strategy": "information-first",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 16,
+      "groups": 2,
+      "maxRun": 2,
+      "rolling12": 5,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "cross-r1-15-swap-2",
+      "k": 1,
+      "strategy": "space-first",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 16,
+      "groups": 2,
+      "maxRun": 2,
+      "rolling12": 5,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "cross-r1-15-swap-2",
+      "k": 1,
+      "strategy": "rotate-kinds",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 18,
+      "groups": 2,
+      "maxRun": 1,
+      "rolling12": 4.142857142857143,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "cross-r2-12",
+      "k": 2,
+      "strategy": "certificate",
+      "outcome": "WIN",
+      "moves": 120,
+      "groups": 41,
+      "maxRun": 3,
+      "rolling12": 6.256880733944954,
+      "stagesReached": [
+        "early",
+        "middle",
+        "late"
+      ]
+    },
+    {
+      "id": "cross-r2-12",
+      "k": 2,
+      "strategy": "information-first",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 296,
+      "groups": 29,
+      "maxRun": 8,
+      "rolling12": 2.982456140350877,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "cross-r2-12",
+      "k": 2,
+      "strategy": "space-first",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 39,
+      "groups": 7,
+      "maxRun": 3,
+      "rolling12": 5.357142857142857,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "cross-r2-12",
+      "k": 2,
+      "strategy": "rotate-kinds",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 28,
+      "groups": 5,
+      "maxRun": 1,
+      "rolling12": 7,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "cross-r2-14",
+      "k": 2,
+      "strategy": "certificate",
+      "outcome": "WIN",
+      "moves": 116,
+      "groups": 39,
+      "maxRun": 3,
+      "rolling12": 6.514285714285714,
+      "stagesReached": [
+        "early",
+        "middle",
+        "late"
+      ]
+    },
+    {
+      "id": "cross-r2-14",
+      "k": 2,
+      "strategy": "information-first",
+      "outcome": "ACTION_LIMIT",
+      "moves": 300,
+      "groups": 28,
+      "maxRun": 8,
+      "rolling12": 2.9792387543252596,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "cross-r2-14",
+      "k": 2,
+      "strategy": "space-first",
+      "outcome": "ACTION_LIMIT",
+      "moves": 300,
+      "groups": 50,
+      "maxRun": 7,
+      "rolling12": 3.13840830449827,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "cross-r2-14",
+      "k": 2,
+      "strategy": "rotate-kinds",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 35,
+      "groups": 10,
+      "maxRun": 2,
+      "rolling12": 5.5,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "cross-r2-15",
+      "k": 2,
+      "strategy": "certificate",
+      "outcome": "WIN",
+      "moves": 123,
+      "groups": 44,
+      "maxRun": 3,
+      "rolling12": 6.125,
+      "stagesReached": [
+        "early",
+        "middle",
+        "late"
+      ]
+    },
+    {
+      "id": "cross-r2-15",
+      "k": 2,
+      "strategy": "information-first",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 296,
+      "groups": 28,
+      "maxRun": 8,
+      "rolling12": 2.9719298245614034,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "cross-r2-15",
+      "k": 2,
+      "strategy": "space-first",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 38,
+      "groups": 6,
+      "maxRun": 3,
+      "rolling12": 5.185185185185185,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "cross-r2-15",
+      "k": 2,
+      "strategy": "rotate-kinds",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 27,
+      "groups": 4,
+      "maxRun": 1,
+      "rolling12": 6.1875,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "cross-r2-4",
+      "k": 2,
+      "strategy": "certificate",
+      "outcome": "WIN",
+      "moves": 116,
+      "groups": 36,
+      "maxRun": 4,
+      "rolling12": 6.2,
+      "stagesReached": [
+        "early",
+        "middle",
+        "late"
+      ]
+    },
+    {
+      "id": "cross-r2-4",
+      "k": 2,
+      "strategy": "information-first",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 15,
+      "groups": 2,
+      "maxRun": 2,
+      "rolling12": 3,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "cross-r2-4",
+      "k": 2,
+      "strategy": "space-first",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 36,
+      "groups": 4,
+      "maxRun": 3,
+      "rolling12": 4.92,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "cross-r2-4",
+      "k": 2,
+      "strategy": "rotate-kinds",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 25,
+      "groups": 2,
+      "maxRun": 1,
+      "rolling12": 6.214285714285714,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "cross-r3-12",
+      "k": 3,
+      "strategy": "certificate",
+      "outcome": "WIN",
+      "moves": 124,
+      "groups": 36,
+      "maxRun": 4,
+      "rolling12": 6.168141592920354,
+      "stagesReached": [
+        "early",
+        "middle",
+        "late"
+      ]
+    },
+    {
+      "id": "cross-r3-12",
+      "k": 3,
+      "strategy": "information-first",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 67,
+      "groups": 14,
+      "maxRun": 4,
+      "rolling12": 4.107142857142857,
+      "stagesReached": [
+        "early",
+        "middle"
+      ]
+    },
+    {
+      "id": "cross-r3-12",
+      "k": 3,
+      "strategy": "space-first",
+      "outcome": "ACTION_LIMIT",
+      "moves": 300,
+      "groups": 52,
+      "maxRun": 7,
+      "rolling12": 3.0346020761245676,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "cross-r3-12",
+      "k": 3,
+      "strategy": "rotate-kinds",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 34,
+      "groups": 12,
+      "maxRun": 3,
+      "rolling12": 5.260869565217392,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "cross-r3-2",
+      "k": 3,
+      "strategy": "certificate",
+      "outcome": "WIN",
+      "moves": 126,
+      "groups": 38,
+      "maxRun": 3,
+      "rolling12": 6.060869565217391,
+      "stagesReached": [
+        "early",
+        "middle",
+        "late"
+      ]
+    },
+    {
+      "id": "cross-r3-2",
+      "k": 3,
+      "strategy": "information-first",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 17,
+      "groups": 2,
+      "maxRun": 3,
+      "rolling12": 4,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "cross-r3-2",
+      "k": 3,
+      "strategy": "space-first",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 148,
+      "groups": 25,
+      "maxRun": 7,
+      "rolling12": 3.2992700729927007,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "cross-r3-2",
+      "k": 3,
+      "strategy": "rotate-kinds",
+      "outcome": "ACTION_LIMIT",
+      "moves": 300,
+      "groups": 22,
+      "maxRun": 3,
+      "rolling12": 6.7923875432525955,
+      "stagesReached": [
+        "early",
+        "middle"
+      ]
+    },
+    {
+      "id": "cross-r3-5",
+      "k": 3,
+      "strategy": "certificate",
+      "outcome": "WIN",
+      "moves": 127,
+      "groups": 35,
+      "maxRun": 3,
+      "rolling12": 6.129310344827586,
+      "stagesReached": [
+        "early",
+        "middle",
+        "late"
+      ]
+    },
+    {
+      "id": "cross-r3-5",
+      "k": 3,
+      "strategy": "information-first",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 68,
+      "groups": 17,
+      "maxRun": 4,
+      "rolling12": 4.175438596491228,
+      "stagesReached": [
+        "early",
+        "middle"
+      ]
+    },
+    {
+      "id": "cross-r3-5",
+      "k": 3,
+      "strategy": "space-first",
+      "outcome": "ACTION_LIMIT",
+      "moves": 300,
+      "groups": 52,
+      "maxRun": 7,
+      "rolling12": 3.0346020761245676,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "cross-r3-5",
+      "k": 3,
+      "strategy": "rotate-kinds",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 35,
+      "groups": 13,
+      "maxRun": 3,
+      "rolling12": 5.25,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "cross-r3-6",
+      "k": 3,
+      "strategy": "certificate",
+      "outcome": "WIN",
+      "moves": 125,
+      "groups": 33,
+      "maxRun": 4,
+      "rolling12": 5.692982456140351,
+      "stagesReached": [
+        "early",
+        "middle",
+        "late"
+      ]
+    },
+    {
+      "id": "cross-r3-6",
+      "k": 3,
+      "strategy": "information-first",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 27,
+      "groups": 9,
+      "maxRun": 3,
+      "rolling12": 2.4375,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "cross-r3-6",
+      "k": 3,
+      "strategy": "space-first",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 151,
+      "groups": 32,
+      "maxRun": 7,
+      "rolling12": 3.4,
+      "stagesReached": [
+        "early",
+        "middle"
+      ]
+    },
+    {
+      "id": "cross-r3-6",
+      "k": 3,
+      "strategy": "rotate-kinds",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 40,
+      "groups": 18,
+      "maxRun": 3,
+      "rolling12": 5.310344827586207,
+      "stagesReached": [
+        "early",
+        "middle"
+      ]
+    },
+    {
+      "id": "frontier-r4-2",
+      "k": 4,
+      "strategy": "certificate",
+      "outcome": "WIN",
+      "moves": 137,
+      "groups": 43,
+      "maxRun": 5,
+      "rolling12": 5.2063492063492065,
+      "stagesReached": [
+        "early",
+        "middle",
+        "late"
+      ]
+    },
+    {
+      "id": "frontier-r4-2",
+      "k": 4,
+      "strategy": "information-first",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 75,
+      "groups": 16,
+      "maxRun": 5,
+      "rolling12": 3.53125,
+      "stagesReached": [
+        "early",
+        "middle"
+      ]
+    },
+    {
+      "id": "frontier-r4-2",
+      "k": 4,
+      "strategy": "space-first",
+      "outcome": "ACTION_LIMIT",
+      "moves": 300,
+      "groups": 51,
+      "maxRun": 7,
+      "rolling12": 2.916955017301038,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "frontier-r4-2",
+      "k": 4,
+      "strategy": "rotate-kinds",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 44,
+      "groups": 16,
+      "maxRun": 3,
+      "rolling12": 4.848484848484849,
+      "stagesReached": [
+        "early",
+        "middle"
+      ]
+    },
+    {
+      "id": "frontier-r4-8",
+      "k": 4,
+      "strategy": "certificate",
+      "outcome": "WIN",
+      "moves": 126,
+      "groups": 30,
+      "maxRun": 5,
+      "rolling12": 5.573913043478261,
+      "stagesReached": [
+        "early",
+        "middle",
+        "late"
+      ]
+    },
+    {
+      "id": "frontier-r4-8",
+      "k": 4,
+      "strategy": "information-first",
+      "outcome": "ACTION_LIMIT",
+      "moves": 300,
+      "groups": 45,
+      "maxRun": 20,
+      "rolling12": 2.43598615916955,
+      "stagesReached": [
+        "early",
+        "middle"
+      ]
+    },
+    {
+      "id": "frontier-r4-8",
+      "k": 4,
+      "strategy": "space-first",
+      "outcome": "ACTION_LIMIT",
+      "moves": 300,
+      "groups": 51,
+      "maxRun": 7,
+      "rolling12": 2.916955017301038,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "frontier-r4-8",
+      "k": 4,
+      "strategy": "rotate-kinds",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 79,
+      "groups": 24,
+      "maxRun": 4,
+      "rolling12": 4.161764705882353,
+      "stagesReached": [
+        "early",
+        "middle"
+      ]
+    },
+    {
+      "id": "random-r4-8",
+      "k": 4,
+      "strategy": "certificate",
+      "outcome": "WIN",
+      "moves": 125,
+      "groups": 30,
+      "maxRun": 3,
+      "rolling12": 5.2894736842105265,
+      "stagesReached": [
+        "early",
+        "middle",
+        "late"
+      ]
+    },
+    {
+      "id": "random-r4-8",
+      "k": 4,
+      "strategy": "information-first",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 62,
+      "groups": 7,
+      "maxRun": 6,
+      "rolling12": 4.196078431372549,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "random-r4-8",
+      "k": 4,
+      "strategy": "space-first",
+      "outcome": "ACTION_LIMIT",
+      "moves": 300,
+      "groups": 51,
+      "maxRun": 7,
+      "rolling12": 2.916955017301038,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "random-r4-8",
+      "k": 4,
+      "strategy": "rotate-kinds",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 34,
+      "groups": 7,
+      "maxRun": 2,
+      "rolling12": 5.565217391304348,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "spread-r4-0",
+      "k": 4,
+      "strategy": "certificate",
+      "outcome": "WIN",
+      "moves": 126,
+      "groups": 33,
+      "maxRun": 5,
+      "rolling12": 5.565217391304348,
+      "stagesReached": [
+        "early",
+        "middle",
+        "late"
+      ]
+    },
+    {
+      "id": "spread-r4-0",
+      "k": 4,
+      "strategy": "information-first",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 18,
+      "groups": 2,
+      "maxRun": 4,
+      "rolling12": 4,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "spread-r4-0",
+      "k": 4,
+      "strategy": "space-first",
+      "outcome": "ACTION_LIMIT",
+      "moves": 300,
+      "groups": 51,
+      "maxRun": 7,
+      "rolling12": 2.916955017301038,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "spread-r4-0",
+      "k": 4,
+      "strategy": "rotate-kinds",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 44,
+      "groups": 16,
+      "maxRun": 3,
+      "rolling12": 4.848484848484849,
+      "stagesReached": [
+        "early",
+        "middle"
+      ]
+    },
+    {
+      "id": "spread-r4-7",
+      "k": 4,
+      "strategy": "certificate",
+      "outcome": "WIN",
+      "moves": 131,
+      "groups": 39,
+      "maxRun": 5,
+      "rolling12": 5.558333333333334,
+      "stagesReached": [
+        "early",
+        "middle",
+        "late"
+      ]
+    },
+    {
+      "id": "spread-r4-7",
+      "k": 4,
+      "strategy": "information-first",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 17,
+      "groups": 2,
+      "maxRun": 4,
+      "rolling12": 3,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "spread-r4-7",
+      "k": 4,
+      "strategy": "space-first",
+      "outcome": "ACTION_LIMIT",
+      "moves": 300,
+      "groups": 51,
+      "maxRun": 7,
+      "rolling12": 2.916955017301038,
+      "stagesReached": [
+        "early"
+      ]
+    },
+    {
+      "id": "spread-r4-7",
+      "k": 4,
+      "strategy": "rotate-kinds",
+      "outcome": "POLICY_EXHAUSTED",
+      "moves": 42,
+      "groups": 14,
+      "maxRun": 3,
+      "rolling12": 4.806451612903226,
+      "stagesReached": [
+        "early",
+        "middle"
+      ]
+    }
+  ]
+}

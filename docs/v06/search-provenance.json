@@ -1,0 +1,240 @@
+{
+  "baseline": "4529e74ad7438446e133ceeeb49d0ba7c1bb34d7",
+  "cohortSelection": "Finite positive certified pool, not an unfiltered random-shuffle population",
+  "constructionAttempts": [
+    {
+      "file": "search-attempts.json",
+      "attempts": 69,
+      "WIN": 9,
+      "UNKNOWN": 60,
+      "sha256": "6af93fe868112bf4d780baa3b5dcf7205b1c58de04276a3c4590a25d3c756fcc"
+    },
+    {
+      "file": "deepening-attempts.json",
+      "attempts": 45,
+      "WIN": 0,
+      "UNKNOWN": 45,
+      "sha256": "54f3fece59173ebebf0af3beaa82bd56d2678aa9e73f8b9078bd27640edf1cec"
+    },
+    {
+      "file": "class4-search-attempts.json",
+      "attempts": 27,
+      "WIN": 5,
+      "UNKNOWN": 22,
+      "sha256": "7242342160b7a3a61079efa500f5df2d989ba5e924320c0c80383a6064774b5f"
+    },
+    {
+      "file": "class1-supplement-attempts.json",
+      "attempts": 3,
+      "WIN": 3,
+      "UNKNOWN": 0,
+      "sha256": "0439800325d18aeb2f5a08adf6fcf337980ab10d4961660d23c4f030b43bfb4a"
+    }
+  ],
+  "guidedSearches": [
+    {
+      "file": "policy-guided-r1-rotate-0.json",
+      "status": "WIN",
+      "elapsedMs": 687.9743000000001,
+      "options": {
+        "required": 1,
+        "strategy": "rotate-kinds",
+        "maxMs": 25000,
+        "maxNodes": 100000,
+        "maxMoves": 240,
+        "maxRun": 5,
+        "minKindsPerColumn": 3,
+        "seed": 0
+      },
+      "stats": {
+        "nodes": 489,
+        "assignments": 138,
+        "policyExhausted": 0,
+        "runPruned": 0,
+        "moveLimitPruned": 0,
+        "qualityPruned": 0,
+        "cyclePruned": 44,
+        "maxDepth": 118
+      }
+    },
+    {
+      "file": "policy-guided-r2-info-2.json",
+      "status": "UNKNOWN",
+      "elapsedMs": 25000.5351,
+      "options": {
+        "required": 2,
+        "strategy": "information-first",
+        "maxMs": 25000,
+        "maxNodes": 150000,
+        "maxMoves": 260,
+        "maxRun": 5,
+        "minKindsPerColumn": 3,
+        "seed": 2
+      },
+      "stats": {
+        "nodes": 103445,
+        "assignments": 21364,
+        "policyExhausted": 0,
+        "runPruned": 144,
+        "moveLimitPruned": 0,
+        "qualityPruned": 0,
+        "cyclePruned": 18128,
+        "maxDepth": 80
+      }
+    },
+    {
+      "file": "policy-guided-r2-info-pruned.json",
+      "status": "UNKNOWN",
+      "elapsedMs": 25001.3179,
+      "options": {
+        "required": 2,
+        "strategy": "information-first",
+        "maxMs": 25000,
+        "maxNodes": 150000,
+        "maxMoves": 260,
+        "maxRun": 5,
+        "minKindsPerColumn": 3,
+        "seed": 2
+      },
+      "stats": {
+        "nodes": 80479,
+        "assignments": 13382,
+        "policyExhausted": 0,
+        "runPruned": 0,
+        "moveLimitPruned": 0,
+        "qualityPruned": 0,
+        "barrierPruned": 33296,
+        "cyclePruned": 6691,
+        "maxDepth": 80
+      }
+    },
+    {
+      "file": "policy-guided-r2-rotate-pruned.json",
+      "status": "UNKNOWN",
+      "elapsedMs": 8000.384,
+      "options": {
+        "required": 2,
+        "strategy": "rotate-kinds",
+        "maxMs": 8000,
+        "maxNodes": 45000,
+        "maxMoves": 260,
+        "maxRun": 5,
+        "minKindsPerColumn": 3,
+        "seed": 0
+      },
+      "stats": {
+        "nodes": 24767,
+        "assignments": 4553,
+        "policyExhausted": 0,
+        "runPruned": 0,
+        "moveLimitPruned": 0,
+        "qualityPruned": 0,
+        "barrierPruned": 11257,
+        "cyclePruned": 2272,
+        "maxDepth": 113
+      }
+    },
+    {
+      "file": "policy-guided-r3-info-3.json",
+      "status": "UNKNOWN",
+      "elapsedMs": 25000.1858,
+      "options": {
+        "required": 3,
+        "strategy": "information-first",
+        "maxMs": 25000,
+        "maxNodes": 150000,
+        "maxMoves": 260,
+        "maxRun": 5,
+        "minKindsPerColumn": 3,
+        "seed": 3
+      },
+      "stats": {
+        "nodes": 91994,
+        "assignments": 15669,
+        "policyExhausted": 0,
+        "runPruned": 50,
+        "moveLimitPruned": 0,
+        "qualityPruned": 0,
+        "cyclePruned": 10772,
+        "maxDepth": 85
+      }
+    },
+    {
+      "file": "policy-guided-r3-rotate-pruned.json",
+      "status": "UNKNOWN",
+      "elapsedMs": 8000.1467999999995,
+      "options": {
+        "required": 3,
+        "strategy": "rotate-kinds",
+        "maxMs": 8000,
+        "maxNodes": 45000,
+        "maxMoves": 260,
+        "maxRun": 5,
+        "minKindsPerColumn": 3,
+        "seed": 0
+      },
+      "stats": {
+        "nodes": 17184,
+        "assignments": 4197,
+        "policyExhausted": 0,
+        "runPruned": 4,
+        "moveLimitPruned": 0,
+        "qualityPruned": 1626,
+        "barrierPruned": 4976,
+        "cyclePruned": 194,
+        "maxDepth": 116
+      }
+    },
+    {
+      "file": "policy-guided-r4-info-4.json",
+      "status": "UNKNOWN",
+      "elapsedMs": 25000.404000000002,
+      "options": {
+        "required": 4,
+        "strategy": "information-first",
+        "maxMs": 25000,
+        "maxNodes": 150000,
+        "maxMoves": 260,
+        "maxRun": 5,
+        "minKindsPerColumn": 3,
+        "seed": 4
+      },
+      "stats": {
+        "nodes": 76543,
+        "assignments": 15512,
+        "policyExhausted": 0,
+        "runPruned": 870,
+        "moveLimitPruned": 0,
+        "qualityPruned": 0,
+        "cyclePruned": 7190,
+        "maxDepth": 99
+      }
+    },
+    {
+      "file": "policy-guided-r4-rotate-pruned.json",
+      "status": "UNKNOWN",
+      "elapsedMs": 8000.606099999999,
+      "options": {
+        "required": 4,
+        "strategy": "rotate-kinds",
+        "maxMs": 8000,
+        "maxNodes": 45000,
+        "maxMoves": 260,
+        "maxRun": 5,
+        "minKindsPerColumn": 3,
+        "seed": 0
+      },
+      "stats": {
+        "nodes": 16552,
+        "assignments": 3336,
+        "policyExhausted": 0,
+        "runPruned": 4,
+        "moveLimitPruned": 0,
+        "qualityPruned": 1428,
+        "barrierPruned": 3564,
+        "cyclePruned": 276,
+        "maxDepth": 120
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "baseline": "4529e74ad7438446e133ceeeb49d0ba7c1bb34d7",
+  "files": [
+    {
+      "path": "assets/analysis.worker-C6Wce5qf.js",
+      "sha256": "71158de64a49873a6114a51788f57c27c1f7e949e61a504b995a354b1434ab0a"
+    },
+    {
+      "path": "assets/index-CU8ebkpn.js",
+      "sha256": "8280670eb4b883b49f351d70c06c931f09c3f74867de21d1e99801177f4e5848"
+    },
+    {
+      "path": "assets/index-DSPYSeSF.css",
+      "sha256": "86fa1e991dce032103d7c47191ba2bcb072e85e23c5aa373c57ad5600a8920bc"
+    },
+    {
+      "path": "favicon.svg",
+      "sha256": "c5a34c472c88ce8ad907784be2e78ae12de6550a9f28f14dd01ac44eb9180ba6"
+    },
+    {
+      "path": "icons/blueberry.svg",
+      "sha256": "6c05a858f7347421628e17dbe00ed0444fbb01497f0216b1f13a62ab67fda574"
+    },
+    {
+      "path": "icons/cabbage.svg",
+      "sha256": "861b101fab4f6da32f5f5cfa7d81336181e5b6c660c5dd6106bbdab6a74147fb"
+    },
+    {
+      "path": "icons/dragon-fruit.svg",
+      "sha256": "4304106faecd40feb290a1226916ce7edd9b535d46230888b2d3f1ecea5dee7f"
+    },
+    {
+      "path": "icons/eggplant.svg",
+      "sha256": "4d81ce3a09ad9d3bd75791918d1ae294ad921986d2d01be6fad72a3af7c9df13"
+    },
+    {
+      "path": "icons/peach.svg",
+      "sha256": "844e605c1fe9ff96d3a7b27e72d7bbcc9050a4b6b0a919bcc1dda420446c1008"
+    },
+    {
+      "path": "icons/purple-creature.svg",
+      "sha256": "5bbcdc0686fe4dd78344cd8af47b289fda05354dcdb1d224a8aeab64b168d973"
+    },
+    {
+      "path": "icons/strawberry.svg",
+      "sha256": "9614c77675d008c5d661a447c1f3215d9134181beabf718f161c019e11e264c3"
+    },
+    {
+      "path": "icons/tomato.svg",
+      "sha256": "5982d4905a3553aafdae4aa5ccc28fe314ec913cde69e380c26b015abfedf49b"
+    },
+    {
+      "path": "icons/yellow-creature.svg",
+      "sha256": "48116da7378ae3fa793b06f1ec1ef4a331ce56af315c5fe62bff88010594a356"
+    },
+    {
+      "path": "index.html",
+      "sha256": "c8d4679f3bcf1fead1a76e35f3f1e037a86f2c07d283b4ea727b7a45bf60a7a3"
+    },
+    {
+      "path": "room.svg",
+      "sha256": "94cc3fa9a8bc92ea2fa471d556123c1f228b2f8e95120c24451ac805050ddeb8"
+    }
+  ]
+}
